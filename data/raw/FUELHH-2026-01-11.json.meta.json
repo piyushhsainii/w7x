@@ -1,0 +1,6 @@
+{
+  "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream?settlementDateFrom=2026-01-11&settlementDateTo=2026-01-11&fuelType=WIND",
+  "retrieved_at": "2026-10-27T22:32:25.825874+00:00",
+  "sha256": "3c12151071c216e7775b3ca2a5f620b2c3966137694cfd4ff7c9aa8d71bd4db6",
+  "file": "FUELHH-2026-01-11.json.gz"
+}

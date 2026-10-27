@@ -1,0 +1,12 @@
+.git
+.venv
+.vercel
+node_modules
+dist
+data/raw
+tests
+docs
+__pycache__
+.pytest_cache
+.env*
+*.zip

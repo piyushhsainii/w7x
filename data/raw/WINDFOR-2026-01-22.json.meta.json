@@ -1,0 +1,6 @@
+{
+  "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2026-01-22T00%3A00%3A00Z&publishDateTimeTo=2026-01-23T00%3A00%3A00Z",
+  "retrieved_at": "2026-10-27T22:32:01.927750+00:00",
+  "sha256": "9e33bf649f878427d34341f19a72579e20b398aef70ae2a233aa8f595505b178",
+  "file": "WINDFOR-2026-01-22.json.gz"
+}
