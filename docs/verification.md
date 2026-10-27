@@ -21,6 +21,8 @@ Verified on 28 October 2026. These are observed checks, not a claim of zero defe
 - **Compose:** `docker compose config --quiet` passed.
 - **Docker build:** the multi-stage Node 22 / Python 3.12 image built successfully. `npm run build` ran successfully inside the clean Linux build stage.
 - **Docker runtime:** the app ran as `appuser` with a read-only filesystem, dropped capabilities, no privilege escalation, and a loopback port binding. Root, health, and accuracy requests returned successful results matching the source snapshot.
+- **GitHub CI:** [Checks run 40600009309](https://github.com/piyushhsainii/w7x/actions/runs/40600009309) passed for application commit `e1e35e3ad346889f6533998f01853c6f780a3a41`, including Python tests, npm installation, production build, and Docker build on a clean Ubuntu runner.
+- **Public source access:** unauthenticated requests confirmed the repository is public and the committed README can be retrieved without signing in.
 
 ## Browser checks
 
@@ -32,6 +34,7 @@ Verified on 28 October 2026. These are observed checks, not a claim of zero defe
 - Reversed accuracy date ranges show a validation message; restoring 1–31 January and 09:30 gives the expected 744-observation scores.
 - Monthly accuracy view and chart render with no captured browser error messages during the checked interactions.
 - Mobile layout was inspected at a 390-pixel viewport. The document remained within the viewport; filter actions were grouped to avoid an isolated export button.
+- Desktop layout was inspected at a 1440-pixel viewport. Secondary copy was adjusted after checking its base-grey contrast ratio; the selected secondary text color measures 4.97:1 against the page grey. This is a targeted contrast check, not a complete accessibility certification.
 
 ## Environment notes and remaining submission work
 
@@ -43,5 +46,7 @@ node node_modules/vite/bin/vite.js build
 ```
 
 The test runner emitted a development-only Starlette warning about future migration from `httpx` to `httpx2`; it did not affect passing assertions. Browser automation sometimes failed to dispatch a mouse event after viewport changes or scrolling; keyboard controls and fresh page state were used to complete the relevant checks.
+
+The app and repository were opened in a new Chrome Incognito window, but desktop inspection timed out awaiting access approval, so literal incognito UI verification is not marked complete. Anonymous HTTP checks and the app browser checks passed. Complete the literal Chrome check yourself before submission.
 
 No YouTube video has been recorded or uploaded, and no submission form has been submitted. Use the presentation guide to record the required two-part video, keep it below ten minutes, then verify final app/repository/video URLs in an incognito browser before submitting. A video URL and the actual form URL are not available in the supplied brief.
