@@ -1,4 +1,4 @@
-import { useSyncExternalStore } from "react";
+import { lazy, Suspense, useSyncExternalStore } from "react";
 import {
   ChevronRight,
   Gauge,
@@ -37,6 +37,12 @@ import {
   SignedError,
   Status,
 } from "./ui";
+
+const OverforecastRadial = lazy(() =>
+  import("./StatisticalCharts").then((module) => ({
+    default: module.OverforecastRadial,
+  })),
+);
 
 function ScoreTooltip({ active, payload }: any) {
   if (!active || !payload?.length) return null;
@@ -462,19 +468,33 @@ export default function AccuracyView({
         </article>
         <article className="panel risk-panel">
           <h2>Overforecast wind and buying exposure</h2>
-          <p>
-            <strong className="semantic-over">
-              {number(m.overforecast_pct, 1)}%
-            </strong>{" "}
-            of matched observations overforecast wind. Among those observations,
-            the mean overforecast was{" "}
-            <strong>{number(m.mean_overforecast_mw)} MW</strong>.
-          </p>
-          <p>
-            Overforecast wind can contribute to buying too little other power.
-            The client’s actual position also depends on demand, contracts, and
-            portfolio exposure.
-          </p>
+          <div className="overforecast-summary">
+            <Suspense
+              fallback={
+                <figure className="overforecast-radial" aria-hidden="true">
+                  <div className="radial-plot" />
+                  <figcaption>&nbsp;</figcaption>
+                </figure>
+              }
+            >
+              <OverforecastRadial value={m.overforecast_pct} count={m.count} />
+            </Suspense>
+            <div>
+              <p>
+                <strong className="semantic-over">
+                  {number(m.overforecast_pct, 1)}%
+                </strong>{" "}
+                of matched observations overforecast wind. Among those
+                observations, the mean overforecast was{" "}
+                <strong>{number(m.mean_overforecast_mw)} MW</strong>.
+              </p>
+              <p>
+                Overforecast wind can contribute to buying too little other
+                power. The client’s actual position also depends on demand,
+                contracts, and portfolio exposure.
+              </p>
+            </div>
+          </div>
         </article>
       </div>
       <section className="panel daily-panel" id="daily-breakdown">

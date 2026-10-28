@@ -3,7 +3,6 @@ import {
   CalendarDays,
   ChevronLeft,
   ChevronRight,
-  Clock3,
   Download,
   Info,
   LoaderCircle,
@@ -252,6 +251,28 @@ export function DateField({
             max="2026-01-31"
             required
             value={value}
+            onClick={(event) => {
+              // Open the native calendar from the whole date field, including
+              // browsers where the decorative indicator has been hidden.
+              try {
+                event.currentTarget.showPicker?.();
+              } catch {
+                /* Native typing remains available. */
+              }
+            }}
+            onKeyDown={(event) => {
+              if (
+                (event.key === "Enter" || event.key === " ") &&
+                event.currentTarget.showPicker
+              ) {
+                event.preventDefault();
+                try {
+                  event.currentTarget.showPicker();
+                } catch {
+                  /* Keep the native field usable. */
+                }
+              }
+            }}
             onInput={(e) => onChange(e.currentTarget.value)}
             onChange={(e) => onChange(e.currentTarget.value)}
           />
@@ -268,34 +289,6 @@ export function DateField({
             <Icon icon={ChevronRight} />
           </button>
         )}
-      </div>
-    </div>
-  );
-}
-
-export function CutoffField({
-  value,
-  onChange,
-}: {
-  value: string;
-  onChange: (value: string) => void;
-}) {
-  const id = useId();
-  return (
-    <div className="time-control">
-      <label htmlFor={id}>Decision cutoff · UK time</label>
-      <div className="time-input">
-        <Icon icon={Clock3} size={18} />
-        <input
-          id={id}
-          type="time"
-          required
-          aria-label="Buying decision cutoff"
-          value={value}
-          onInput={(e) => onChange(e.currentTarget.value)}
-          onChange={(e) => onChange(e.target.value)}
-        />
-        <span>GMT</span>
       </div>
     </div>
   );

@@ -1,4 +1,12 @@
-import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import {
+  lazy,
+  Suspense,
+  memo,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import {
   ArrowUpToLine,
   ChevronLeft,
@@ -39,6 +47,12 @@ import {
   SignedError,
   Status,
 } from "./ui";
+
+const WindProfileRadar = lazy(() =>
+  import("./StatisticalCharts").then((module) => ({
+    default: module.WindProfileRadar,
+  })),
+);
 
 function ForecastTooltip({ active, payload, revealed }: any) {
   if (!active || !payload?.length) return null;
@@ -348,6 +362,15 @@ export default function DecisionView({
   const hourly = useMemo(
     () => d?.rows.filter((r) => r.label.endsWith(":00")) ?? [],
     [d],
+  );
+  const snapshots = useMemo(
+    () =>
+      hourly.filter((row) =>
+        ["00:00", "04:00", "08:00", "12:00", "16:00", "20:00"].includes(
+          row.label,
+        ),
+      ),
+    [hourly],
   );
   const table = allIntervals ? (d?.rows ?? hourly) : hourly;
   const shownRows = useMemo(
@@ -736,6 +759,74 @@ export default function DecisionView({
           </>
         )}
       </OutcomeRegion>
+      <section
+        className="panel wind-profile-panel"
+        aria-labelledby="wind-profile-title"
+      >
+        <div className="section-heading">
+          <div>
+            <h2 id="wind-profile-title">Wind profile · four-hour snapshots</h2>
+            <p>Compare six native delivery timestamps on the same MW scale.</p>
+          </div>
+        </div>
+        <OutcomeRegion day={day} cutoff={cutoff}>
+          {(revealed, setReveal) => (
+            <>
+              <div className="wind-profile-layout">
+                <Suspense
+                  fallback={
+                    <div className="wind-profile-radar" aria-hidden="true" />
+                  }
+                >
+                  <WindProfileRadar
+                    rows={snapshots}
+                    domain={domain}
+                    revealed={revealed}
+                  />
+                </Suspense>
+                <div className="wind-profile-context">
+                  <ul className="chart-legend" aria-label="Wind profile legend">
+                    <li>
+                      <span className="legend-stroke forecast-stroke" />
+                      Selected forecast
+                    </li>
+                    <li
+                      aria-hidden={!revealed}
+                      style={{ visibility: revealed ? "visible" : "hidden" }}
+                    >
+                      <span className="legend-stroke actual-stroke" />
+                      Actual wind
+                    </li>
+                  </ul>
+                  <p>
+                    Each spoke is a delivery time: 00:00, 04:00, 08:00, 12:00,
+                    16:00 and 20:00 GMT. Points use the same cutoff-selected
+                    forecasts as the timeline above.
+                  </p>
+                  <p className="caption">
+                    The polygon connects these six snapshots for comparison; it
+                    does not represent intermediate values, full-day energy or
+                    an accuracy score.
+                  </p>
+                  <button
+                    className="button secondary"
+                    type="button"
+                    aria-pressed={revealed}
+                    onClick={() => setReveal(!revealed)}
+                  >
+                    {revealed
+                      ? "Conceal actual outcome"
+                      : "Reveal actual outcome"}
+                  </button>
+                  <a href="#forecast-audit">
+                    Read all values in the audit trail
+                  </a>
+                </div>
+              </div>
+            </>
+          )}
+        </OutcomeRegion>
+      </section>
       <section className="panel audit-panel" id="forecast-audit">
         <div className="section-heading">
           <div>

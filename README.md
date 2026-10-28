@@ -72,43 +72,46 @@ The browser caches immutable results by date/range/cutoff for the session, with 
 
 For matched forecast F and actual A, `e = F - A`:
 
-| Measure | Formula | Interpretation |
-|---|---|---|
-| MAE MW | mean(abs(e)) | Typical error magnitude |
-| RMSE MW | sqrt(mean(e²)) | Weighs large errors more heavily |
-| Bias MW | mean(e) | Positive means wind overforecast |
-| WAPE % | 100 × sum(abs(e)) / sum(A) | Aggregate absolute error relative to actual generation |
-| P90 absolute error MW | 90th percentile of abs(e) | Historical magnitude threshold, not a guaranteed future bound |
-| Overforecast share % | 100 × count(e > 0) / count(e) | Frequency of positive errors |
+| Measure               | Formula                       | Interpretation                                                |
+| --------------------- | ----------------------------- | ------------------------------------------------------------- |
+| MAE MW                | mean(abs(e))                  | Typical error magnitude                                       |
+| RMSE MW               | sqrt(mean(e²))                | Weighs large errors more heavily                              |
+| Bias MW               | mean(e)                       | Positive means wind overforecast                              |
+| WAPE %                | 100 × sum(abs(e)) / sum(A)    | Aggregate absolute error relative to actual generation        |
+| P90 absolute error MW | 90th percentile of abs(e)     | Historical magnitude threshold, not a guaranteed future bound |
+| Overforecast share %  | 100 × count(e > 0) / count(e) | Frequency of positive errors                                  |
 
 Percentiles use linear interpolation between ordered observations. Pooled metrics operate on all matched observations, not averages of rounded daily scores. January is a short sample with correlated observations: these are descriptive results, not proof of future performance. No ML model is trained because the requirement is to evaluate the provided forecasts.
 
 ## Repository map
 
-| Path | Responsibility |
-|---|---|
-| `src/App.tsx` | Navigation, active decision context, automatic filters, and keyboard day navigation |
-| `src/components/` | Decision desk, accuracy, methodology, and shared accessible UI components |
-| `src/query.ts`, `src/outcome.ts`, `src/format.ts` | Shared TanStack query cache, UI-only outcome state, and UK display formatting |
-| `src/api.ts` | Typed API contracts and HTTP error handling |
-| `src/tokens.css`, `src/styles.css` | Shared type, spacing, contrast, semantic color tokens, and responsive layout |
-| `src/main.tsx`, `index.html`, `public/` | App bootstrapping, local font imports, favicon |
-| `backend/analysis.py` | Publication selection, matching, metrics, pooled summaries |
-| `backend/main.py` | Validated read-only FastAPI endpoints, CSV exports, static serving, headers |
-| `api/index.py` | Vercel Python ASGI entrypoint |
-| `scripts/ingest.py` | Bounded source downloads, retries, gzip cache, validation, atomic snapshot build |
-| `data/wind.sqlite` | Immutable indexed forecast/actual snapshot |
-| `data/manifest.json` | Source URLs, retrieval times, checksums, row counts |
-| `data/raw/` | Original compressed Elexon responses and metadata for reproducibility |
-| `tests/` | Calculation, timing, exports, cache headers, and mocked-fetch React integration tests |
-| `docs/presentation-guide.md` | Plain-language explanation and timed video script |
-| `docs/architecture.md` | Design choices, security, limitations, and future extension |
-| `docs/verification.md` | Actual verification results and deployment status |
-| `docs/ui-review/` | UI changelog, self-check, validation evidence, and before/after screenshots |
-| `Dockerfile`, `compose.yaml` | Container build and hardened local runtime |
-| `vercel.json`, `.vercelignore` | Vercel static frontend and Python function deployment |
-| `.github/workflows/checks.yml` | Python and frontend tests, TypeScript/Vite build, Docker build on GitHub |
-| `requirements.lock`, `package-lock.json` | Pinned dependency resolutions |
+| Path                                              | Responsibility                                                                        |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `src/App.tsx`                                     | Navigation, active decision context, automatic filters, and keyboard day navigation   |
+| `src/components/`                                 | Decision desk, accuracy, methodology, and shared accessible UI components             |
+| `src/query.ts`, `src/outcome.ts`, `src/format.ts` | Shared TanStack query cache, UI-only outcome state, and UK display formatting         |
+| `src/api.ts`                                      | Typed API contracts and HTTP error handling                                           |
+| `src/tokens.css`, `src/styles.css`                | Shared type, spacing, contrast, semantic color tokens, and responsive layout          |
+| `src/main.tsx`, `index.html`, `public/`           | App bootstrapping, local font imports, favicon                                        |
+| `backend/analysis.py`                             | Publication selection, matching, metrics, pooled summaries                            |
+| `backend/main.py`                                 | Validated read-only FastAPI endpoints, CSV exports, static serving, headers           |
+| `api/index.py`                                    | Vercel Python ASGI entrypoint                                                         |
+| `scripts/ingest.py`                               | Bounded source downloads, retries, gzip cache, validation, atomic snapshot build      |
+| `data/wind.sqlite`                                | Immutable indexed forecast/actual snapshot                                            |
+| `data/manifest.json`                              | Source URLs, retrieval times, checksums, row counts                                   |
+| `data/raw/`                                       | Original compressed Elexon responses and metadata for reproducibility                 |
+| `tests/`                                          | Calculation, timing, exports, cache headers, and mocked-fetch React integration tests |
+| `docs/presentation-guide.md`                      | Plain-language explanation and timed video script                                     |
+| `docs/architecture.md`                            | Design choices, security, limitations, and future extension                           |
+| `docs/verification.md`                            | Actual verification results and deployment status                                     |
+| `docs/ui-review/`                                 | UI changelog, self-check, validation evidence, and before/after screenshots           |
+| `docs/cutoff-review/`                             | Cutoff picker and supplementary chart verification, with responsive screenshots       |
+| `src/components/evilcharts/`                      | Adapted MIT-licensed EvilCharts components and upstream provenance                    |
+| `public/licenses/evilcharts-MIT.txt`              | EvilCharts copyright and license notice                                               |
+| `Dockerfile`, `compose.yaml`                      | Container build and hardened local runtime                                            |
+| `vercel.json`, `.vercelignore`                    | Vercel static frontend and Python function deployment                                 |
+| `.github/workflows/checks.yml`                    | Python and frontend tests, TypeScript/Vite build, Docker build on GitHub              |
+| `requirements.lock`, `package-lock.json`          | Pinned dependency resolutions                                                         |
 
 The reference image does not identify a typeface. Inter is used as a close sans-serif match, with locally hosted assets. The reference’s greys, soft shadows, rounded surfaces, pastel header treatment, and generous spacing are adapted to a readable analytical interface.
 
@@ -151,6 +154,12 @@ Core tests include publication exactly at and just after cutoff, independent sel
 Public, non-sensitive Elexon data is served read-only. There are no accounts, uploaded files, trading credentials, orders, arbitrary fetch URLs, or client-supplied database paths. All SQL values are parameterized, date ranges are bounded to January, errors avoid exposing stack traces, and no permissive CORS is enabled. Exports contain only system dates and numeric source values. HTTP security headers protect the UI; TLS and edge traffic controls are provided by the deployment platform.
 
 SQLite opens read-only and immutable, using indexed target/publication keys. Lightweight standard-library calculations avoid pandas/ML cold-start overhead. Bounded memoization, a shared browser cache and conditional HTTP responses reuse immutable analysis. The UI loads public actuals once and visually conceals them until revealed; this is not access control. API consumers can still explicitly request reveal=false. Fonts are local, and chart data is small. The non-root Docker runtime drops Linux capabilities under Compose. Before extending to private portfolios or execution, add authentication, authorization, audit logging, durable storage, platform rate controls, and an explicit trading-risk workflow.
+
+## Cutoff picker and supplementary charts
+
+The forecast cutoff opens an alarm-style hour/minute wheel. Scroll, tap a number, or use the arrow keys; Apply commits the selected time, while Cancel or Escape keeps the previous cutoff. Decision date is the buying day; cutoff is the latest permitted forecast publication on that day; delivery is the next day. Draft wheel changes never request data. The existing 300 ms debounce refreshes the selected forecast and accuracy analysis after Apply.
+
+Supplementary radial and radar views adapt the open-source [EvilCharts](https://evilcharts.com/) Recharts components to Aer’s design tokens. The radial shows the API’s historical overforecast frequency (not an accuracy score or future probability). The radar compares six native four-hour wind snapshots on a shared MW scale; it does not integrate energy or calculate a new metric. The existing timeline, audit table and MAE/RMSE/bias/WAPE remain authoritative. Actuals follow the existing reveal control. See [upstream provenance and adaptations](src/components/evilcharts/UPSTREAM.md); no extra chart runtime was added.
 
 ## Submission preparation
 

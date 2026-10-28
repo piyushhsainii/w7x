@@ -14,13 +14,8 @@ import AccuracyView from "./components/AccuracyView";
 import DecisionView from "./components/DecisionView";
 import MethodView from "./components/MethodView";
 import Sidebar from "./components/Sidebar";
-import {
-  CutoffField,
-  DateField,
-  ExportButton,
-  Hint,
-  Icon,
-} from "./components/ui";
+import CutoffField from "./components/CutoffPicker";
+import { DateField, ExportButton, Hint, Icon } from "./components/ui";
 
 type View = "decision" | "accuracy" | "method";
 
@@ -170,6 +165,20 @@ export default function App() {
           </div>
           {view !== "method" && (
             <section className="panel filter-panel" aria-label="View filters">
+              <p className="filter-guide">
+                {view === "decision" ? (
+                  <>
+                    Choose the <strong>decision date</strong> you would buy on,
+                    then the <strong>forecast cutoff</strong> — the latest
+                    publication time you could use. Delivery is the next day.
+                  </>
+                ) : (
+                  <>
+                    Choose the decision-date range, then apply the same{" "}
+                    <strong>forecast cutoff</strong> to every date.
+                  </>
+                )}
+              </p>
               <div className="filter-fields">
                 {view === "decision" ? (
                   <DateField
@@ -195,7 +204,11 @@ export default function App() {
                     />
                   </>
                 )}
-                <CutoffField value={draftCutoff} onChange={setDraftCutoff} />
+                <CutoffField
+                  value={draftCutoff}
+                  onChange={setDraftCutoff}
+                  decisionDate={view === "decision" ? draftDay : undefined}
+                />
                 <div className="filter-export">
                   {view === "decision" ? (
                     <DecisionExport day={day} cutoff={cutoff} />
