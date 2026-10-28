@@ -1,18 +1,14 @@
-import { useState } from "react";
 import {
   ArrowRight,
   BookOpenText,
   CalendarClock,
-  Check,
   ChevronRight,
-  Clipboard,
   Clock3,
   Database,
-  ExternalLink,
   ListFilter,
 } from "lucide-react";
 import type { Meta } from "../api";
-import { dateLabel, number } from "../format";
+import { number } from "../format";
 import { Glossary, Icon, KeyFinding } from "./ui";
 import { useMetaQuery } from "../query";
 import { QueryControls } from "./QueryControls";
@@ -25,20 +21,6 @@ export default function MethodView({
   cutoff: string;
 }) {
   const metadata = useMetaQuery();
-  const [copied, setCopied] = useState(false);
-  const [copyError, setCopyError] = useState("");
-  const copy = async () => {
-    if (!meta) return;
-    try {
-      await navigator.clipboard.writeText(meta.database_sha256);
-      setCopied(true);
-      setCopyError("");
-    } catch {
-      setCopyError(
-        "Clipboard unavailable. Select the full checksum below to copy it.",
-      );
-    }
-  };
   const steps = [
     {
       title: "Define the buying decision",
@@ -318,72 +300,6 @@ export default function MethodView({
               <div className="step-body">{step.body}</div>
             </details>
           ))}
-        </div>
-      </section>
-      <section className="panel source-panel">
-        <h2>Source and snapshot</h2>
-        <p>Real Elexon source data, preserved in an immutable snapshot.</p>
-        <div className="snapshot-stats">
-          <div>
-            <strong>{number(meta?.forecast_rows)}</strong>
-            <span>forecast versions</span>
-          </div>
-          <div>
-            <strong>{number(meta?.actual_rows)}</strong>
-            <span>actual versions</span>
-          </div>
-          <div>
-            <strong>{number(meta?.source_requests)}</strong>
-            <span>source requests</span>
-          </div>
-        </div>
-        <dl className="snapshot-meta">
-          <div>
-            <dt>Retrieved</dt>
-            <dd>{meta ? dateLabel(meta.retrieved_at) : "Not available"}</dd>
-          </div>
-          <div>
-            <dt>Database SHA-256</dt>
-            <dd>
-              <code className="checksum">
-                {meta?.database_sha256 ?? "Snapshot metadata unavailable"}
-              </code>
-              <button
-                className="button secondary"
-                onClick={copy}
-                disabled={!meta}
-                aria-label="Copy full database checksum"
-                title="Copy SHA-256 checksum"
-              >
-                <Icon icon={copied ? Check : Clipboard} size={18} />
-                {copied ? "Copied" : "Copy checksum"}
-              </button>
-            </dd>
-          </div>
-        </dl>
-        {copyError && <p role="status">{copyError}</p>}
-        {copied && (
-          <span role="status" className="sr-only">
-            Checksum copied to clipboard.
-          </span>
-        )}
-        <div className="source-links">
-          <a
-            href="https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/WINDFOR/stream"
-            target="_blank"
-            rel="noreferrer"
-          >
-            WINDFOR documentation
-            <Icon icon={ExternalLink} size={18} />
-          </a>
-          <a
-            href="https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/FUELHH/stream"
-            target="_blank"
-            rel="noreferrer"
-          >
-            FUELHH documentation
-            <Icon icon={ExternalLink} size={18} />
-          </a>
         </div>
       </section>
     </>

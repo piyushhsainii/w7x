@@ -17,10 +17,8 @@ import {
   Gauge,
   Info,
   ListChecks,
-  ListFilter,
   Ruler,
   Scale,
-  ShieldCheck,
   Wind,
   X,
 } from "lucide-react";
@@ -506,7 +504,6 @@ export default function DecisionView({
                     </p>
                   </div>
                   <div className="forecast-actions">
-
                     <DecisionExport day={day} cutoff={cutoff} />
                   </div>
                 </div>
@@ -584,61 +581,6 @@ export default function DecisionView({
             </div>
           )}
         </section>
-        <aside
-          className="panel integrity-panel"
-          aria-labelledby="integrity-title"
-        >
-          <div className="section-icon">
-            <Icon icon={ShieldCheck} />
-          </div>
-          <h2 id="integrity-title">Decision-time integrity</h2>
-          <p>
-            Only forecasts published by{" "}
-            <strong>
-              {cutoff} GMT on {dateLabel(day)}
-            </strong>{" "}
-            are eligible.
-          </p>
-          <dl className="provenance-list">
-            <div>
-              <dt>
-                Selected publication{d.publish_times.length === 1 ? "" : "s"}
-              </dt>
-              <dd>
-                {d.publish_times.length === 1
-                  ? publicationLabel(d.publish_times[0])
-                  : `${d.publish_times.length} source publication times; inspect each row below`}
-              </dd>
-            </div>
-            <div>
-              <dt>
-                <Icon icon={ListFilter} size={18} />
-                Selection rule
-              </dt>
-              <dd>
-                <code>latest publishTime ≤ cutoff</code>
-              </dd>
-            </div>
-            <div>
-              <dt>Source</dt>
-              <dd>Elexon WINDFOR · Great Britain wind</dd>
-            </div>
-          </dl>
-          <OutcomeRegion day={day} cutoff={cutoff}>
-            {(revealed, setReveal) => (
-              <>
-                <p className="integrity-outcome">
-                  <Icon icon={revealed ? Eye : EyeOff} size={18} />
-                  <OutcomeStack
-                    revealed={revealed}
-                    shown="Actuals are revealed for retrospective review."
-                    hidden="Actuals and selected-day errors are visually hidden."
-                  />
-                </p>
-              </>
-            )}
-          </OutcomeRegion>
-        </aside>
       </div>
       <OutcomeRegion day={day} cutoff={cutoff}>
         {(revealed, setReveal) => (

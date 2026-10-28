@@ -2919,5 +2919,26 @@ main {
 }
 
 /* Center capped content within the workspace, independently of the sidebar. */
-main { margin-inline: auto; }
-.workspace-decision { --color-under: #1565c0; }
+main {
+  margin-inline: auto;
+}
+.workspace-decision {
+  --color-under: #1565c0;
+}
+
+/* Keep the forecast and audit evidence across the available card width. */
+.workspace-decision .decision-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+.audit-panel .table-scroll {
+  width: 100%;
+  max-width: none;
+}
+.context-stats > div {
+  display: grid;
+  grid-template-rows: 40px auto;
+  align-content: start;
+}
+.context-stats > div > span {
+  min-height: 40px;
+}
