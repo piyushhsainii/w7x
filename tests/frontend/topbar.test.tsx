@@ -46,7 +46,7 @@ async function mount() {
       <App />
     </QueryClientProvider>,
   );
-  await screen.findByRole("button", { name: "Show actual outcome" });
+  await screen.findByRole("heading", { name: "Mean forecast wind" });
   await waitFor(() => expect(client.isFetching()).toBe(0));
   return { fetcher, client, ...result };
 }

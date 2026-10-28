@@ -176,7 +176,7 @@ it("automatically applies the compact topbar cutoff through existing query param
       <App />
     </QueryClientProvider>,
   );
-  await screen.findByRole("button", { name: "Show actual outcome" });
+  await screen.findByRole("heading", { name: "Mean forecast wind" });
   await waitFor(() => expect(client.isFetching()).toBe(0));
   const initial = fetcher.mock.calls.length;
   fireEvent.click(screen.getByRole("button", { name: "Cutoff 09:30 GMT" }));

@@ -113,7 +113,7 @@ describe("snapshot cache and outcome interaction", () => {
         <App />
       </QueryClientProvider>,
     );
-    await screen.findByRole("button", { name: "Show actual outcome" });
+    await screen.findByRole("heading", { name: "Mean forecast wind" });
     await waitFor(() => expect(client.isFetching()).toBe(0));
     const chart = result.container.querySelector(".recharts-wrapper");
     fetcher.mockImplementationOnce(
@@ -140,7 +140,7 @@ describe("snapshot cache and outcome interaction", () => {
         <App />
       </QueryClientProvider>,
     );
-    await screen.findByRole("button", { name: "Show actual outcome" });
+    await screen.findByRole("heading", { name: "Mean forecast wind" });
     await waitFor(() => expect(client.isFetching()).toBe(0));
     for (let i = 0; i < 10; i++) {
       fireEvent.click(
@@ -175,68 +175,16 @@ describe("snapshot cache and outcome interaction", () => {
     client.clear();
   });
 
-  it("toggle never fetches, navigates, scrolls or replaces the chart/table; preserves selection and pagination", async () => {
-    const fetcher = mockFetch();
-    const client = createQueryClient();
-    const result = render(
-      <QueryClientProvider client={client}>
-        <App />
-      </QueryClientProvider>,
-    );
-    await screen.findByRole("button", { name: "Show actual outcome" });
+  it("always shows forecast and actuals without reveal controls", async () => {
+    const fetcher = mockFetch(); const client = createQueryClient();
+    const result = render(<QueryClientProvider client={client}><App /></QueryClientProvider>);
+    await screen.findByRole("heading", {name: "Mean forecast wind"});
     await waitFor(() => expect(client.isFetching()).toBe(0));
-    fireEvent.click(
-      screen.getByRole("button", { name: "Next audit table page" }),
-    );
-    fireEvent.click(
-      screen.getByRole("row", { name: "Inspect 08:00 GMT forecast" }),
-    );
-    const table = result.container.querySelector("table"),
-      chart = result.container.querySelector(".recharts-wrapper"),
-      main = result.container.querySelector("main");
-    expect(chart).not.toBeNull();
-    const calls = fetcher.mock.calls.length,
-      location = window.location.href;
-    const ticks =
-      result.container.querySelector(".recharts-yAxis")?.textContent;
-    const scrollTo = vi.mocked(window.scrollTo);
-    scrollTo.mockClear();
-    const rootRender = vi.fn();
-    document.addEventListener("aer:app-render", rootRender);
-    for (let i = 0; i < 10; i++) {
-      fireEvent.click(
-        screen.getByRole("button", { name: "Show actual outcome" }),
-      );
-      fireEvent.click(
-        screen.getByRole("button", { name: "Hide actual outcome" }),
-      );
-    }
-    expect(fetcher).toHaveBeenCalledTimes(calls);
-    expect(window.location.href).toBe(location);
-    expect(scrollTo).not.toHaveBeenCalled();
-    expect(rootRender).not.toHaveBeenCalled();
-    document.removeEventListener("aer:app-render", rootRender);
-    expect(result.container.querySelector("table")).toBe(table);
-    expect(result.container.querySelector(".recharts-wrapper")).toBe(chart);
-    expect(result.container.querySelector("main")).toBe(main);
-    expect(result.container.querySelector(".recharts-yAxis")?.textContent).toBe(
-      ticks,
-    );
-    expect(
-      screen.getByRole("row", { name: "Inspect 08:00 GMT forecast" }).className,
-    ).toContain("selected-row");
-    expect(
-      screen
-        .getByRole("button", { name: "Previous audit table page" })
-        .hasAttribute("disabled"),
-    ).toBe(false);
-    expect(
-      fetcher.mock.calls
-        .filter(([url]) => String(url).includes("/decision"))
-        .every(([url]) => String(url).endsWith("reveal=true")),
-    ).toBe(true);
-    result.unmount();
-    client.clear();
+    expect(screen.queryByRole("button", {name: "Show actual outcome"})).toBeNull();
+    expect(screen.queryByRole("button", {name: "Conceal actual outcome"})).toBeNull();
+    expect(screen.getByRole("link", {name: "Export CSV"}).getAttribute("href")).toContain("reveal=true");
+    expect(count(fetcher, "/decision")).toBe(1);
+    result.unmount();client.clear();
   });
 
   it("deduplicates concurrent observers, requests one new date and reuses an earlier date", async () => {
@@ -277,7 +225,7 @@ describe("snapshot cache and outcome interaction", () => {
         <App />
       </QueryClientProvider>,
     );
-    await screen.findByRole("button", { name: "Show actual outcome" });
+    await screen.findByRole("heading", { name: "Mean forecast wind" });
     for (let i = 0; i < 3; i++)
       fireEvent.click(screen.getByRole("button", { name: "Next day" }));
     expect(count(fetcher, "/decision")).toBe(1);
