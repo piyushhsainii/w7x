@@ -14,7 +14,7 @@ The pilot is historical: January decision dates are replayed. A production versi
 
 Suppose it is 10 January at 09:30 UK time, and you are considering delivery on 11 January. A forecast published at 07:30 is eligible; one published at 11:30 is too late. For every target timestamp on 11 January, the API selects the most recent forecast with `publishTime <= 10 January 09:30`.
 
-The decision desk displays the selected forecast, its mean and peak MW, its publication time, and coverage. The actual outcome is initially hidden. Selecting “Reveal outcome” adds actual wind and realized error, clearly marking the transition to hindsight.
+The decision desk displays the selected forecast, its mean and peak MW, its publication time, and coverage. The actual outcome is initially hidden. Selecting “Show actual outcome” adds actual wind and realized error, clearly marking the transition to hindsight.
 
 The default cutoff is an example of an internal buying-decision time. It is configurable because the client’s auction and internal deadline need confirmation. Do not claim all UK day-ahead auctions close at 09:30.
 
@@ -66,15 +66,15 @@ Show the January replay badge. Explain that this is the pilot period requested i
 
 **0:40–1:35 — Walk through the decision desk**
 
-Choose 10 January at 09:30 and click Update view. Point out the 11 January delivery date. Show the forecast curve and the selected publication time. Explain that mean and peak values are national MW, not the client’s suggested order quantity.
+Choose 10 January at 09:30; filters apply automatically. Point out the 11 January delivery date. Show the forecast curve and the selected publication time. Explain that mean and peak values are national MW, not the client’s suggested order quantity.
 
 **1:35–2:15 — Demonstrate publication integrity**
 
-Inspect an hourly timestamp in the audit table. Change the cutoff to 09:00, update, and show that publication selection can change. Return to 09:30. Say: “We only use publications available by the selected decision time; we never select a later update because it happens to look better.”
+Inspect an hourly timestamp in the audit table. Change the cutoff to 09:00 and show that publication selection changes automatically. Return to 09:30. Say: “We only use publications available by the selected decision time; we never select a later update because it happens to look better.”
 
 **2:15–3:00 — Reveal the outcome**
 
-Click Reveal outcome. Point to the solid forecast and dashed actual curve. Explain the sign of the error. Show one audit row with forecast, actual, publication, and error. Mention that :30 rows do not receive invented forecasts.
+Click Show actual outcome. Point to the solid dark-green forecast and dashed teal actual curve. Explain the sign of the error. Show one audit row with forecast, actual, publication, and error. Mention that :30 rows do not receive invented forecasts.
 
 **3:00–4:00 — Quantify the uncertainty**
 

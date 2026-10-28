@@ -49,8 +49,8 @@ Deploy the repository root, not `src/` or `dist/`. Vercel builds React and bundl
 
 ## Product flow
 
-1. **Decision desk:** choose the decision date and buying cutoff, then update. Inspect hourly next-day wind, publication provenance, freshness, coverage, and earlier errors available by that cutoff. Actual outcomes are hidden by default.
-2. **Reveal outcome:** overlay actuals and display realized MAE. An audit table shows each source publication and signed error. The CSV follows the same hidden/revealed state.
+1. **Decision desk:** choose the decision date and buying cutoff; valid filters apply automatically after 300 ms. Inspect hourly next-day wind, publication provenance, lead time, coverage, and earlier errors available by that cutoff. Actual outcomes are hidden by default.
+2. **Show actual outcome:** overlay actuals and display realized MAE. An audit table shows each source publication and signed error. The CSV follows the same hidden/revealed state.
 3. **Forecast accuracy:** filter January decision dates; inspect pooled MAE, RMSE, bias, P90, WAPE, overforecast risk, coverage, and daily scores. Select a daily score to replay it.
 4. **Methodology:** explains the formulas, timing rules, source snapshot, and limitations inside the product.
 
@@ -85,9 +85,11 @@ Percentiles use linear interpolation between ordered observations. Pooled metric
 
 | Path | Responsibility |
 |---|---|
-| `src/App.tsx` | React decision desk, accuracy view, methodology, audit table |
+| `src/App.tsx` | Navigation, active decision context, automatic filters, and keyboard day navigation |
+| `src/components/` | Decision desk, accuracy, methodology, and shared accessible UI components |
+| `src/hooks.ts`, `src/format.ts` | Existing read-only fetch behavior and consistent UK display formatting |
 | `src/api.ts` | Typed API contracts and HTTP error handling |
-| `src/styles.css` | Reference-inspired soft grey, sage, lilac design; responsive layout |
+| `src/tokens.css`, `src/styles.css` | Shared type, spacing, contrast, semantic color tokens, and responsive layout |
 | `src/main.tsx`, `index.html`, `public/` | App bootstrapping, local font imports, favicon |
 | `backend/analysis.py` | Publication selection, matching, metrics, pooled summaries |
 | `backend/main.py` | Validated read-only FastAPI endpoints, CSV exports, static serving, headers |
@@ -100,6 +102,7 @@ Percentiles use linear interpolation between ordered observations. Pooled metric
 | `docs/presentation-guide.md` | Plain-language explanation and timed video script |
 | `docs/architecture.md` | Design choices, security, limitations, and future extension |
 | `docs/verification.md` | Actual verification results and deployment status |
+| `docs/ui-review/` | UI changelog, self-check, validation evidence, and before/after screenshots |
 | `Dockerfile`, `compose.yaml` | Container build and hardened local runtime |
 | `vercel.json`, `.vercelignore` | Vercel static frontend and Python function deployment |
 | `.github/workflows/checks.yml` | Python tests, TypeScript/Vite build, Docker build on GitHub |

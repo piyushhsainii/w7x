@@ -1,0 +1,15 @@
+# UI readability revision
+
+UI-only revision against `fe97b97810b643082dfc93fd495ec9a62bd2d7fe`. Backend, data, API contracts, metrics, exact timestamp matching, and cutoff logic are unchanged.
+
+1. **Visual hierarchy:** replaced layered glass effects with opaque surfaces, visible borders and soft shadows; added shared design tokens, descriptive headings, and data-backed key findings. WAPE joins the four-card accuracy row; P90 remains in a dedicated error-context card. Removed the tagline, turbine artwork, and slogan panel; consolidated sample coverage into one expandable line.
+2. **Color and contrast:** unified dark-green actions/forecast, amber overforecast, teal underforecast, and neutral states. Signed values include direction icons and text descriptions. Configured text pairs exceed AA contrast; captions and axes are at least 12px.
+3. **Charts:** readable integer MW axes, publication/cutoff subtitle, solid forecast markers, contrasting dashed actuals, keyboard-focusable forecast points, detailed tooltips and table alternatives. Accuracy bars encode signed daily bias, rank the three highest existing daily MAE values, and directly label pooled MAE. No uncertainty band or new analytical calculation was added.
+4. **Tables:** numeric alignment and tabular digits, compact columns, zebra/hover/focus states, sticky first columns, row activation by pointer/keyboard, chevron inspection, signed semantic errors, lead time, and clearer timestamp-resolution controls. Daily scores use page scrolling with all rows present; the old clipped body is removed. Constant per-day match counts appear only as warnings when incomplete.
+5. **Controls:** single date/time icons, consistent UK date labels, 300 ms automatic filter application, visible CSV exports, adjacent 40px day controls, arrow shortcuts, and one active-filter summary. Actuals and selected-day error remain hidden until explicitly revealed.
+6. **Navigation:** consistent sticky sidebar and page geometry, active left accent with aria-current, history status/tooltip, and no trailing active dot, date chip, or avatar. Mobile navigation stays in a compact sticky header. Skip-to-content remains above the chrome on focus.
+7. **Icons:** Lucide icons use a shared decorative wrapper with 1.75px strokes, 20px KPI icons and 18px navigation. Inspection uses chevrons; only external source links use ExternalLink. Icon-only controls have accessible names and titles.
+8. **Methodology:** publication-to-actual timeline, readable plain-English formulas and worked +500 MW example, natural-height numbered accordions, shared glossary hints, three source-count tiles, consistent retrieval date, and full checksum with verified copy action.
+9. **Accessibility and responsiveness:** shared 2px focus rings, reduced-motion support, one h1 per page, text minimum 12px, and 4/2/2/1 KPI columns at 1440/1024/768/390 widths. Dense chart bars have equivalent full-width keyboard-operable table rows; this is documented in the self-check.
+
+See [self-check](SELF-CHECK.md), [validation data](validation.json), and the [screenshot gallery](index.html).

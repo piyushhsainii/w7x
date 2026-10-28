@@ -1,0 +1,225 @@
+{
+  "baseline_commit": "fe97b97810b643082dfc93fd495ec9a62bd2d7fe",
+  "backend_api_data_unchanged": true,
+  "api_response_checks": [
+    {
+      "path": "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=false",
+      "unchanged": true
+    },
+    {
+      "path": "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=true",
+      "unchanged": true
+    },
+    {
+      "path": "/api/decision?decision_date=2026-01-31&cutoff=09:00&reveal=true",
+      "unchanged": true
+    },
+    {
+      "path": "/api/accuracy?start=2026-01-01&end=2026-01-31&cutoff=09:30",
+      "unchanged": true
+    }
+  ],
+  "minimum_configured_font_px": 12.0,
+  "text_token_contrast_pairs": [
+    {
+      "foreground": "text",
+      "background": "page",
+      "ratio": 11.54
+    },
+    {
+      "foreground": "text",
+      "background": "surface",
+      "ratio": 13.93
+    },
+    {
+      "foreground": "text",
+      "background": "subtle",
+      "ratio": 12.89
+    },
+    {
+      "foreground": "text",
+      "background": "primary-surface",
+      "ratio": 12.17
+    },
+    {
+      "foreground": "text",
+      "background": "over-surface",
+      "ratio": 13.07
+    },
+    {
+      "foreground": "text",
+      "background": "under-surface",
+      "ratio": 12.78
+    },
+    {
+      "foreground": "muted",
+      "background": "page",
+      "ratio": 5.87
+    },
+    {
+      "foreground": "muted",
+      "background": "surface",
+      "ratio": 7.08
+    },
+    {
+      "foreground": "muted",
+      "background": "subtle",
+      "ratio": 6.55
+    },
+    {
+      "foreground": "muted",
+      "background": "primary-surface",
+      "ratio": 6.19
+    },
+    {
+      "foreground": "muted",
+      "background": "over-surface",
+      "ratio": 6.64
+    },
+    {
+      "foreground": "muted",
+      "background": "under-surface",
+      "ratio": 6.5
+    },
+    {
+      "foreground": "primary",
+      "background": "page",
+      "ratio": 8.13
+    },
+    {
+      "foreground": "primary",
+      "background": "surface",
+      "ratio": 9.81
+    },
+    {
+      "foreground": "primary",
+      "background": "subtle",
+      "ratio": 9.08
+    },
+    {
+      "foreground": "primary",
+      "background": "primary-surface",
+      "ratio": 8.57
+    },
+    {
+      "foreground": "primary",
+      "background": "over-surface",
+      "ratio": 9.2
+    },
+    {
+      "foreground": "primary",
+      "background": "under-surface",
+      "ratio": 9.0
+    },
+    {
+      "foreground": "over",
+      "background": "page",
+      "ratio": 5.16
+    },
+    {
+      "foreground": "over",
+      "background": "surface",
+      "ratio": 6.22
+    },
+    {
+      "foreground": "over",
+      "background": "subtle",
+      "ratio": 5.76
+    },
+    {
+      "foreground": "over",
+      "background": "primary-surface",
+      "ratio": 5.44
+    },
+    {
+      "foreground": "over",
+      "background": "over-surface",
+      "ratio": 5.84
+    },
+    {
+      "foreground": "over",
+      "background": "under-surface",
+      "ratio": 5.71
+    },
+    {
+      "foreground": "under",
+      "background": "page",
+      "ratio": 5.79
+    },
+    {
+      "foreground": "under",
+      "background": "surface",
+      "ratio": 6.99
+    },
+    {
+      "foreground": "under",
+      "background": "subtle",
+      "ratio": 6.47
+    },
+    {
+      "foreground": "under",
+      "background": "primary-surface",
+      "ratio": 6.11
+    },
+    {
+      "foreground": "under",
+      "background": "over-surface",
+      "ratio": 6.56
+    },
+    {
+      "foreground": "under",
+      "background": "under-surface",
+      "ratio": 6.41
+    },
+    {
+      "foreground": "neutral",
+      "background": "page",
+      "ratio": 4.9
+    },
+    {
+      "foreground": "neutral",
+      "background": "surface",
+      "ratio": 5.92
+    },
+    {
+      "foreground": "neutral",
+      "background": "subtle",
+      "ratio": 5.48
+    },
+    {
+      "foreground": "neutral",
+      "background": "primary-surface",
+      "ratio": 5.17
+    },
+    {
+      "foreground": "neutral",
+      "background": "over-surface",
+      "ratio": 5.55
+    },
+    {
+      "foreground": "neutral",
+      "background": "under-surface",
+      "ratio": 5.43
+    },
+    {
+      "foreground": "on-primary",
+      "background": "primary",
+      "ratio": 10.01
+    },
+    {
+      "foreground": "on-primary",
+      "background": "text",
+      "ratio": 14.22
+    }
+  ],
+  "minimum_text_contrast": 4.9,
+  "card_border_vs_page": 1.75,
+  "focus_vs_page": 4.86,
+  "minimum_control_border_contrast": 3.81,
+  "database_sha256": "70d1ffe4d266312d5dbe782dee474e6df21f5e0378459ef16bac9f85762ade70",
+  "exceptions": [
+    "Inactive disabled controls use reduced opacity and are exempt from WCAG text contrast requirements.",
+    "Dense chart bars can be narrower than 40 px; every bar has an equivalent full-width, keyboard-operable table row. Chart points have 40 px transparent hit areas."
+  ],
+  "note": "Configured token-pair and source checks, not a complete accessibility certification. Browser checks are recorded separately."
+}

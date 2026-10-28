@@ -1,0 +1,15 @@
+{
+  "autoApply": true,
+  "cutoff0930To0900Selects0730": true,
+  "january31DeliversFebruary1": true,
+  "hiddenActualColumnsAbsent": true,
+  "explicitOutcomeReveal": true,
+  "unpairedHalfHoursPreserved": true,
+  "keyboardChartPointInspection": true,
+  "checksumCopy": true,
+  "glossaryFocusAndMobileOverflow": true,
+  "reversedRangeValidation": true,
+  "worstDayReplay": true,
+  "firstDayNoPriorHistory": true,
+  "leftRightDayShortcuts": true
+}
