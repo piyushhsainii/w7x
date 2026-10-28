@@ -2917,3 +2917,7 @@ main {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Center capped content within the workspace, independently of the sidebar. */
+main { margin-inline: auto; }
+.workspace-decision { --color-under: #1565c0; }

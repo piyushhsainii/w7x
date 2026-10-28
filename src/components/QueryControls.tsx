@@ -14,7 +14,7 @@ export function OutcomeRegion({
   children: (visible: boolean, update: (next: boolean) => void) => ReactNode;
 }) {
   const [visible, update] = useOutcome(day, cutoff);
-  return children(visible, update);
+  return children(true, update);
 }
 
 export function QueryControls({ query }: { query: UseQueryResult }) {
@@ -102,7 +102,7 @@ export function DecisionExport({
   const [revealed] = useOutcome(day, cutoff);
   return (
     <ExportButton
-      href={`/api/export?decision_date=${day}&cutoff=${cutoff}&reveal=${revealed}`}
+      href={`/api/export?decision_date=${day}&cutoff=${cutoff}&reveal=true`}
     />
   );
 }

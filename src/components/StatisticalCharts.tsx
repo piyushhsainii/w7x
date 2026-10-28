@@ -168,7 +168,7 @@ export const WindProfileRadar = memo(function WindProfileRadar({
             hide: !revealed,
             strokeDasharray: "6 4",
             strokeWidth: 2,
-            dot: { r: 3 },
+            dot: { r: 5, fill: "var(--color-under)", stroke: "var(--color-surface)", strokeWidth: 2 },
             connectNulls: false,
             isAnimationActive: false,
           }}

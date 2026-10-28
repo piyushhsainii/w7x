@@ -506,20 +506,7 @@ export default function DecisionView({
                     </p>
                   </div>
                   <div className="forecast-actions">
-                    <button
-                      className={`button outcome-button ${revealed ? "active-outcome" : "secondary"}`}
-                      type="button"
-                      aria-pressed={revealed}
-                      onClick={() => setReveal(!revealed)}
-                      title={
-                        revealed
-                          ? "Hide actuals and selected-day error"
-                          : "Reveal actuals and selected-day error"
-                      }
-                    >
-                      <Icon icon={revealed ? Eye : EyeOff} size={18} />
-                      {revealed ? "Hide actual outcome" : "Show actual outcome"}
-                    </button>
+
                     <DecisionExport day={day} cutoff={cutoff} />
                   </div>
                 </div>
@@ -785,16 +772,7 @@ export default function DecisionView({
                     does not represent intermediate values, full-day energy or
                     an accuracy score.
                   </p>
-                  <button
-                    className="button secondary"
-                    type="button"
-                    aria-pressed={revealed}
-                    onClick={() => setReveal(!revealed)}
-                  >
-                    {revealed
-                      ? "Conceal actual outcome"
-                      : "Reveal actual outcome"}
-                  </button>
+
                   <a href="#forecast-audit">
                     Read all values in the audit trail
                   </a>
