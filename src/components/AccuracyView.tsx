@@ -26,7 +26,6 @@ import {
 import type { DayScore } from "../api";
 import { dateLabel, direction, number, signed } from "../format";
 import { useAccuracyQuery } from "../query";
-import { QueryControls } from "./QueryControls";
 import {
   CoverageLine,
   ExportButton,
@@ -213,7 +212,6 @@ export default function AccuracyView({
   }));
   return (
     <>
-      <QueryControls query={resource} />
       <KeyFinding>
         {m.count ? (
           <>
@@ -508,7 +506,7 @@ export default function AccuracyView({
           </div>
           <ExportButton
             href={`/api/accuracy/export?start=${start}&end=${end}&cutoff=${cutoff}`}
-            label="Export daily scores"
+            label="Export CSV"
           />
         </div>
         <div className="table-scroll daily-table">

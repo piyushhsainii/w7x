@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useId, useState, type ReactNode } from "react";
 import { RefreshCw } from "lucide-react";
 import type { UseQueryResult } from "@tanstack/react-query";
 import { useOutcome } from "../outcome";
@@ -18,6 +18,7 @@ export function OutcomeRegion({
 }
 
 export function QueryControls({ query }: { query: UseQueryResult }) {
+  const id = useId();
   const [, tick] = useState(0);
   useEffect(() => {
     const timer = window.setInterval(() => tick((n) => n + 1), 30000);
@@ -28,8 +29,13 @@ export function QueryControls({ query }: { query: UseQueryResult }) {
     Math.floor((Date.now() - query.dataUpdatedAt) / 60000),
   );
   return (
-    <div className="query-controls" aria-live="polite">
-      <span>
+    <div className="query-controls toolbar-refresh">
+      <span
+        id={id}
+        role="tooltip"
+        className="refresh-tooltip"
+        aria-live="polite"
+      >
         {query.isPlaceholderData
           ? "Updating filters… showing previous selection"
           : query.dataUpdatedAt
@@ -40,7 +46,7 @@ export function QueryControls({ query }: { query: UseQueryResult }) {
         className="icon-button"
         type="button"
         aria-label="Refresh data"
-        title="Refresh data for this view"
+        aria-describedby={id}
         disabled={query.isFetching}
         onClick={() => {
           void query.refetch({ cancelRefetch: false });

@@ -16,6 +16,16 @@ import decision from "./fixtures/decision.json";
 import accuracy from "./fixtures/accuracy.json";
 import meta from "./fixtures/meta.json";
 
+vi.mock("recharts", async (importOriginal) => {
+  const original = await importOriginal<typeof import("recharts")>();
+  const { cloneElement } = await import("react");
+  return {
+    ...original,
+    ResponsiveContainer: ({ children }: { children: React.ReactElement }) =>
+      cloneElement(children, { width: 1000, height: 330 } as object),
+  };
+});
+
 beforeEach(() => {
   // jsdom does not provide the browser's native modal/focus implementation.
   HTMLDialogElement.prototype.showModal = function () {
@@ -144,7 +154,7 @@ it("selects snapped scroll positions without reducing minute resolution", async 
   expect(changed).toHaveBeenCalledExactlyOnceWith("07:17");
 });
 
-it("does not fetch while choosing or cancelling; applying changes the existing query parameters once", async () => {
+it("automatically applies the compact topbar cutoff through existing query parameters", async () => {
   const fetcher = vi
     .spyOn(globalThis, "fetch")
     .mockImplementation(
@@ -169,22 +179,12 @@ it("does not fetch while choosing or cancelling; applying changes the existing q
   await screen.findByRole("button", { name: "Show actual outcome" });
   await waitFor(() => expect(client.isFetching()).toBe(0));
   const initial = fetcher.mock.calls.length;
-  openPicker();
-  fireEvent.keyDown(screen.getByRole("listbox", { name: "Cutoff hours" }), {
-    key: "ArrowRight",
+  fireEvent.click(screen.getByRole("button", { name: "Cutoff 09:30 GMT" }));
+  fireEvent.change(screen.getByLabelText(/Forecast cutoff.*UK time/), {
+    target: { value: "09:00" },
   });
-  fireEvent.keyDown(screen.getByRole("listbox", { name: "Cutoff minutes" }), {
-    key: "End",
-  });
-  expect(
-    (screen.getByLabelText("Decision date") as HTMLInputElement).value,
-  ).toBe("2026-01-15");
   expect(fetcher).toHaveBeenCalledTimes(initial);
-  fireEvent.click(screen.getByRole("button", { name: "Cancel" }));
-  expect(fetcher).toHaveBeenCalledTimes(initial);
-  openPicker();
-  fireEvent.click(screen.getByRole("button", { name: "09:00", exact: true }));
-  await apply();
+  expect(screen.queryByRole("button", { name: "Apply time" })).toBeNull();
   await waitFor(() => expect(fetcher.mock.calls.length).toBe(initial + 2));
   const requests = fetcher.mock.calls
     .slice(initial)
@@ -192,6 +192,9 @@ it("does not fetch while choosing or cancelling; applying changes the existing q
   expect(requests.every((url) => url.includes("cutoff=09:00"))).toBe(true);
   expect(requests.filter((url) => url.includes("/decision?")).length).toBe(1);
   expect(requests.filter((url) => url.includes("/accuracy?")).length).toBe(1);
+  expect(new URL(window.location.href).searchParams.get("cutoff")).toBe(
+    "09:00",
+  );
   result.unmount();
   client.clear();
 });

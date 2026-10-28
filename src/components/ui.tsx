@@ -75,6 +75,7 @@ export function MetricCard({
   unit,
   caption,
   term,
+  termStyle = "inline",
   tone = "neutral",
 }: {
   icon: LucideIcon;
@@ -83,23 +84,40 @@ export function MetricCard({
   unit?: string;
   caption: ReactNode;
   term?: Term;
+  termStyle?: "inline" | "tooltip";
   tone?: string;
 }) {
+  const labelId = useId();
   return (
     <article className={`panel metric-card tone-${tone}`}>
       <div className="metric-top">
-        <h2>
-          {label}
-          {term &&
-            (typeof label === "string" &&
-            label.toLowerCase().includes(term.toLowerCase()) ? (
-              <Hint text={definitions[term]} label={`${term}: definition`} />
-            ) : (
-              <>
-                {" "}
-                · <Glossary term={term} />
-              </>
-            ))}
+        <h2 aria-labelledby={termStyle === "tooltip" ? labelId : undefined}>
+          {term && termStyle === "tooltip" ? (
+            <Hint
+              text={`${term}: ${definitions[term]}`}
+              label={`${term}: definition`}
+            >
+              <span id={labelId}>{label}</span>
+              <Icon icon={Info} size={14} />
+            </Hint>
+          ) : (
+            <>
+              {label}
+              {term &&
+                (typeof label === "string" &&
+                label.toLowerCase().includes(term.toLowerCase()) ? (
+                  <Hint
+                    text={definitions[term]}
+                    label={`${term}: definition`}
+                  />
+                ) : (
+                  <>
+                    {" "}
+                    · <Glossary term={term} />
+                  </>
+                ))}
+            </>
+          )}
         </h2>
         <span className="metric-icon">
           <Icon icon={icon} />

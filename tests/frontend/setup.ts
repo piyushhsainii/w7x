@@ -2,6 +2,7 @@ import { afterEach, vi } from "vitest";
 import { cleanup } from "@testing-library/react";
 afterEach(() => {
   cleanup();
+  window.history.replaceState(null, "", "/");
   vi.restoreAllMocks();
   vi.unstubAllGlobals();
 });

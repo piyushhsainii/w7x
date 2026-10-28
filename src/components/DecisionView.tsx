@@ -37,16 +37,8 @@ import {
 import type { Interval } from "../api";
 import { clockLabel, dateLabel, number, publicationLabel } from "../format";
 import { useDecisionQuery } from "../query";
-import { OutcomeRegion, OutcomeStack, QueryControls } from "./QueryControls";
-import {
-  Glossary,
-  Hint,
-  Icon,
-  KeyFinding,
-  MetricCard,
-  SignedError,
-  Status,
-} from "./ui";
+import { DecisionExport, OutcomeRegion, OutcomeStack } from "./QueryControls";
+import { Glossary, Hint, Icon, MetricCard, SignedError, Status } from "./ui";
 
 const WindProfileRadar = lazy(() =>
   import("./StatisticalCharts").then((module) => ({
@@ -409,32 +401,13 @@ export default function DecisionView({
   const complete = d.forecast_count === d.expected_native_points;
   return (
     <>
-      <QueryControls query={resource} />
-      <KeyFinding>
-        Mean forecast wind is <strong>{number(d.mean_forecast_mw)} MW</strong>,
-        peaking at <strong>{number(d.peak_forecast_mw)} MW</strong>.
-        {prior?.count ? (
-          <>
-            {" "}
-            Typical error from earlier January decisions:{" "}
-            <strong>{number(prior.mae_mw)} MW</strong> across{" "}
-            {number(prior.count)} observations available by the cutoff.
-          </>
-        ) : (
-          <>
-            {" "}
-            No earlier January observations were available to quantify prior
-            error.
-          </>
-        )}
-      </KeyFinding>
       <div className="kpi-grid">
         <MetricCard
           icon={Wind}
           label="Mean forecast wind"
           value={number(d.mean_forecast_mw)}
           unit="MW"
-          caption="Mean of available hourly forecast points"
+          caption="Available hourly forecast points"
         />
         <MetricCard
           icon={ArrowUpToLine}
@@ -455,7 +428,7 @@ export default function DecisionView({
           caption={
             <>
               {complete
-                ? `Covers all ${d.expected_native_points} delivery hours`
+                ? `All ${d.expected_native_points} delivery hours available`
                 : `${d.forecast_count} of ${d.expected_native_points} delivery hours available`}
               <Hint
                 label="Explain forecast coverage"
@@ -477,6 +450,7 @@ export default function DecisionView({
                   />
                 }
                 term="MAE"
+                termStyle="tooltip"
                 value={
                   <OutcomeStack
                     revealed={revealed}
@@ -488,10 +462,10 @@ export default function DecisionView({
                 caption={
                   <OutcomeStack
                     revealed={revealed}
-                    shown={`${d.metrics?.count ?? 0} matched timestamps · outcome revealed`}
+                    shown={`${d.metrics?.count ?? 0} matched timestamps · revealed`}
                     hidden={
                       prior?.count
-                        ? `${number(prior.count)} observations available before this cutoff`
+                        ? `${number(prior.count)} earlier observations`
                         : "Insufficient earlier January history"
                     }
                   />
@@ -520,18 +494,35 @@ export default function DecisionView({
           className="panel primary-panel forecast-panel"
           aria-labelledby="forecast-title"
         >
-          <div className="section-heading">
-            <div>
-              <h2 id="forecast-title">Next-day wind forecast</h2>
-              <p>
-                {dateLabel(d.delivery_date)} · publications available by{" "}
-                {cutoff} GMT on {dateLabel(day)}
-              </p>
-            </div>
-          </div>
           <OutcomeRegion day={day} cutoff={cutoff}>
             {(revealed, setReveal) => (
               <>
+                <div className="section-heading forecast-heading">
+                  <div>
+                    <h2 id="forecast-title">Next-day wind forecast</h2>
+                    <p>
+                      {dateLabel(d.delivery_date)} · publications available by{" "}
+                      {cutoff} GMT on {dateLabel(day)}
+                    </p>
+                  </div>
+                  <div className="forecast-actions">
+                    <button
+                      className={`button outcome-button ${revealed ? "active-outcome" : "secondary"}`}
+                      type="button"
+                      aria-pressed={revealed}
+                      onClick={() => setReveal(!revealed)}
+                      title={
+                        revealed
+                          ? "Hide actuals and selected-day error"
+                          : "Reveal actuals and selected-day error"
+                      }
+                    >
+                      <Icon icon={revealed ? Eye : EyeOff} size={18} />
+                      {revealed ? "Hide actual outcome" : "Show actual outcome"}
+                    </button>
+                    <DecisionExport day={day} cutoff={cutoff} />
+                  </div>
+                </div>
                 <div className="chart-tools">
                   <ul className="chart-legend" aria-label="Chart legend">
                     <li>
@@ -546,20 +537,6 @@ export default function DecisionView({
                       Actual wind
                     </li>
                   </ul>
-                  <button
-                    className={`button outcome-button ${revealed ? "active-outcome" : "secondary"}`}
-                    type="button"
-                    aria-pressed={revealed}
-                    onClick={() => setReveal(!revealed)}
-                    title={
-                      revealed
-                        ? "Hide actuals and selected-day error"
-                        : "Reveal actuals and selected-day error"
-                    }
-                  >
-                    <Icon icon={revealed ? Eye : EyeOff} size={18} />
-                    {revealed ? "Hide actual outcome" : "Show actual outcome"}
-                  </button>
                 </div>
                 <span className="axis-unit" aria-hidden="true">
                   MW

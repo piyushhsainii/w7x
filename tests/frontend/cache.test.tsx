@@ -279,9 +279,7 @@ describe("snapshot cache and outcome interaction", () => {
     );
     await screen.findByRole("button", { name: "Show actual outcome" });
     for (let i = 0; i < 3; i++)
-      fireEvent.click(
-        screen.getByRole("button", { name: "Next decision day" }),
-      );
+      fireEvent.click(screen.getByRole("button", { name: "Next day" }));
     expect(count(fetcher, "/decision")).toBe(1);
     await waitFor(() => expect(count(fetcher, "/decision")).toBe(2));
     expect(
