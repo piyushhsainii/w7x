@@ -144,19 +144,19 @@ describe("snapshot cache and outcome interaction", () => {
     await waitFor(() => expect(client.isFetching()).toBe(0));
     for (let i = 0; i < 10; i++) {
       fireEvent.click(
-        screen.getByRole("button", { name: "Decision desk", exact: true }),
+        screen.getByRole("link", { name: "Decision desk", exact: true }),
       );
       fireEvent.click(
-        screen.getByRole("button", { name: "Forecast accuracy", exact: true }),
+        screen.getByRole("link", { name: "Forecast accuracy", exact: true }),
       );
       fireEvent.click(
-        screen.getByRole("button", { name: "Methodology", exact: true }),
+        screen.getByRole("link", { name: "Methodology", exact: true }),
       );
       fireEvent.click(
-        screen.getByRole("button", { name: "Decision desk", exact: true }),
+        screen.getByRole("link", { name: "Decision desk", exact: true }),
       );
       fireEvent.click(
-        screen.getByRole("button", { name: "Forecast accuracy", exact: true }),
+        screen.getByRole("link", { name: "Forecast accuracy", exact: true }),
       );
     }
     await act(async () => {

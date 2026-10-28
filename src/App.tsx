@@ -3,10 +3,8 @@ import {
   BookOpenText,
   CalendarClock,
   ChevronRight,
-  Database,
   History,
   Target,
-  Wind,
 } from "lucide-react";
 import { DecisionExport } from "./components/QueryControls";
 import { setOutcome } from "./outcome";
@@ -15,6 +13,7 @@ import { SnapshotSubscriptions, useMetaQuery } from "./query";
 import AccuracyView from "./components/AccuracyView";
 import DecisionView from "./components/DecisionView";
 import MethodView from "./components/MethodView";
+import Sidebar from "./components/Sidebar";
 import {
   CutoffField,
   DateField,
@@ -148,45 +147,7 @@ export default function App() {
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <aside className="sidebar">
-        <a
-          className="brand"
-          href="#"
-          aria-label="Aer home"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate("decision");
-          }}
-        >
-          <span className="brand-mark">
-            <Icon icon={Wind} size={26} />
-          </span>
-          aer.
-        </a>
-        <div className="workspace-label">
-          Wind intelligence <span>Pilot</span>
-        </div>
-        <nav aria-label="Main navigation">
-          {navigation.map((item) => (
-            <button
-              key={item.id}
-              className={`nav-item ${view === item.id ? "active" : ""}`}
-              aria-current={view === item.id ? "page" : undefined}
-              onClick={() => navigate(item.id)}
-            >
-              <Icon icon={item.icon} size={18} />
-              {item.label}
-            </button>
-          ))}
-        </nav>
-        <div className="sidebar-source">
-          <Icon icon={Database} size={18} />
-          <div>
-            <strong>Elexon source data</strong>
-            <span>WINDFOR + FUELHH · WIND</span>
-          </div>
-        </div>
-      </aside>
+      <Sidebar items={navigation} active={view} onNavigate={navigate} />
       <div className="main-column">
         <header className="topbar">
           <span className="breadcrumb">

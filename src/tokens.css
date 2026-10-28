@@ -38,5 +38,17 @@
   --radius-lg: 18px;
   --shadow-card: 0 5px 18px rgb(25 47 39 / 8%);
   --shadow-primary: 0 8px 26px rgb(25 47 39 / 12%);
-  --sidebar-width: 220px;
+  --sidebar-width: 256px;
+  --sidebar-rail-width: 72px;
+  --topbar-height: 72px;
+  --mobile-tabs-height: 56px;
+  --font-nav: 15px;
+  --radius-nav: 10px;
+  --color-sidebar-surface: var(--color-subtle);
+  --color-sidebar-border: var(--color-grid);
+  --color-sidebar-hover: color-mix(
+    in srgb,
+    var(--color-primary-surface) 55%,
+    var(--color-subtle)
+  );
 }

@@ -1,0 +1,4147 @@
+{
+  "viewports": [
+    {
+      "phase": "top",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 288,
+        "right": 478.6000061035156,
+        "top": 25.200000762939453,
+        "width": 190.6000061035156,
+        "x": 288,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 2623,
+      "documentWidth": 1425,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 0,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1168.800048828125,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "accuracy",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 288,
+        "right": 506.1000061035156,
+        "top": 25.200000762939453,
+        "width": 218.1000061035156,
+        "x": 288,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 3998,
+      "documentWidth": 1425,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 3073.60009765625,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1168.800048828125,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "phase": "top",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 280,
+        "right": 470.6000061035156,
+        "top": 25.200000762939453,
+        "width": 190.6000061035156,
+        "x": 280,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 3296,
+      "documentWidth": 1009,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 0,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1008.7999877929688,
+        "top": 0,
+        "width": 752.7999877929688,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1024
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "accuracy",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 280,
+        "right": 498.1000061035156,
+        "top": 25.200000762939453,
+        "width": 218.1000061035156,
+        "x": 280,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 4446,
+      "documentWidth": 1009,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 3485.60009765625,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1008.7999877929688,
+        "top": 0,
+        "width": 752.7999877929688,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1024
+      }
+    },
+    {
+      "phase": "top",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 92,
+        "right": 262.5500030517578,
+        "top": 26,
+        "width": 170.5500030517578,
+        "x": 92,
+        "y": 26
+      },
+      "documentHeight": 3318,
+      "documentWidth": 753,
+      "footer": {
+        "bottom": 900.0000152587891,
+        "height": 76.80000305175781,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 823.2000122070312,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 823.2000122070312
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 0,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 132,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 88,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 88
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 180,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 136,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 136
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 228,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 184,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 184
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 17.600000381469727,
+        "right": 53.60000038146973,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 17.600000381469727,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 228,
+        "height": 140,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 88,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 88
+      },
+      "scrollY": 0,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 72,
+        "top": 0,
+        "width": 72,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 72,
+        "right": 752.7999877929688,
+        "top": 0,
+        "width": 680.7999877929688,
+        "x": 72,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "accuracy",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 92,
+        "right": 287.9499969482422,
+        "top": 26,
+        "width": 195.9499969482422,
+        "x": 92,
+        "y": 26
+      },
+      "documentHeight": 4767,
+      "documentWidth": 753,
+      "footer": {
+        "bottom": 900.0000152587891,
+        "height": 76.80000305175781,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 823.2000122070312,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 823.2000122070312
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 0,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 132,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 88,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 88
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 180,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 136,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 136
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 228,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 184,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 184
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 17.600000381469727,
+        "right": 53.60000038146973,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 17.600000381469727,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 228,
+        "height": 140,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 88,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 88
+      },
+      "scrollY": 3787.199951171875,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 72,
+        "top": 0,
+        "width": 72,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 72,
+        "right": 752.7999877929688,
+        "top": 0,
+        "width": 680.7999877929688,
+        "x": 72,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "phase": "top",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 16,
+        "right": 182.5500030517578,
+        "top": 26,
+        "width": 166.5500030517578,
+        "x": 16,
+        "y": 26
+      },
+      "documentHeight": 4520,
+      "documentWidth": 375,
+      "footer": null,
+      "header": null,
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 4,
+            "right": 121.0625,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 4,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 129.0625,
+            "right": 246.125,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 129.0625,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 254.125,
+            "right": 371.1875,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 254.125,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": null,
+      "mainBottomPadding": "56px",
+      "mobile": true,
+      "nav": {
+        "bottom": 900,
+        "height": 56,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 844,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 844
+      },
+      "scrollY": 0,
+      "sidebar": null,
+      "sidebarStyle": null,
+      "sourceTerms": [],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 0,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 390
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "accuracy",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 16,
+        "right": 207.9499969482422,
+        "top": 26,
+        "width": 191.9499969482422,
+        "x": 16,
+        "y": 26
+      },
+      "documentHeight": 5883,
+      "documentWidth": 375,
+      "footer": null,
+      "header": null,
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 4,
+            "right": 121.0625,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 4,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 129.0625,
+            "right": 246.125,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 129.0625,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 254.125,
+            "right": 371.1875,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 254.125,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": null,
+      "mainBottomPadding": "56px",
+      "mobile": true,
+      "nav": {
+        "bottom": 900,
+        "height": 56,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 844,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 844
+      },
+      "scrollY": 4944.7998046875,
+      "sidebar": null,
+      "sidebarStyle": null,
+      "sourceTerms": [],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 0,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 390
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 288,
+        "right": 478.6000061035156,
+        "top": 25.200000762939453,
+        "width": 190.6000061035156,
+        "x": 288,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 2623,
+      "documentWidth": 1425,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 1076.800048828125,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1168.800048828125,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "method",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 288,
+        "right": 473.6000061035156,
+        "top": 25.200000762939453,
+        "width": 185.6000061035156,
+        "x": 288,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 3470,
+      "documentWidth": 1425,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 780.7999877929688,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1424.800048828125,
+        "top": 0,
+        "width": 1168.800048828125,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 280,
+        "right": 470.6000061035156,
+        "top": 25.200000762939453,
+        "width": 190.6000061035156,
+        "x": 280,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 3296,
+      "documentWidth": 1009,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 1500,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1008.7999877929688,
+        "top": 0,
+        "width": 752.7999877929688,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1024
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "method",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 280,
+        "right": 465.6000061035156,
+        "top": 25.200000762939453,
+        "width": 185.6000061035156,
+        "x": 280,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 3990,
+      "documentWidth": 1009,
+      "footer": {
+        "bottom": 900,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 804,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 804
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 814.4000244140625,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 843.2000122070312,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 843.2000122070312
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 843.2000122070312,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 843.2000122070312
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 858.4000120162964,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 843.2000122070312,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 843.2000122070312
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1008.7999877929688,
+        "top": 0,
+        "width": 752.7999877929688,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 1024
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 92,
+        "right": 262.5500030517578,
+        "top": 26,
+        "width": 170.5500030517578,
+        "x": 92,
+        "y": 26
+      },
+      "documentHeight": 3318,
+      "documentWidth": 753,
+      "footer": {
+        "bottom": 900.0000152587891,
+        "height": 76.80000305175781,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 823.2000122070312,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 823.2000122070312
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 0,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 132,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 88,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 88
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 180,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 136,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 136
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 228,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 184,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 184
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 17.600000381469727,
+        "right": 53.60000038146973,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 17.600000381469727,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 228,
+        "height": 140,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 88,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 88
+      },
+      "scrollY": 1486.4000244140625,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 72,
+        "top": 0,
+        "width": 72,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 72,
+        "right": 752.7999877929688,
+        "top": 0,
+        "width": 680.7999877929688,
+        "x": 72,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "method",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 92,
+        "right": 257.9499969482422,
+        "top": 26,
+        "width": 165.9499969482422,
+        "x": 92,
+        "y": 26
+      },
+      "documentHeight": 5154,
+      "documentWidth": 753,
+      "footer": {
+        "bottom": 900.0000152587891,
+        "height": 76.80000305175781,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 823.2000122070312,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 823.2000122070312
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 0,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 132,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 88,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 88
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 180,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 136,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 136
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 228,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 184,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 184
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 17.600000381469727,
+        "right": 53.60000038146973,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 17.600000381469727,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 228,
+        "height": 140,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 88,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 88
+      },
+      "scrollY": 1486.4000244140625,
+      "sidebar": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 72,
+        "top": 0,
+        "width": 72,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 72,
+        "right": 752.7999877929688,
+        "top": 0,
+        "width": 680.7999877929688,
+        "x": 72,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 768
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 16,
+        "right": 182.5500030517578,
+        "top": 26,
+        "width": 166.5500030517578,
+        "x": 16,
+        "y": 26
+      },
+      "documentHeight": 4520,
+      "documentWidth": 375,
+      "footer": null,
+      "header": null,
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 4,
+            "right": 121.0625,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 4,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 129.0625,
+            "right": 246.125,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 129.0625,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 254.125,
+            "right": 371.1875,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 254.125,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": null,
+      "mainBottomPadding": "56px",
+      "mobile": true,
+      "nav": {
+        "bottom": 900,
+        "height": 56,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 844,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 844
+      },
+      "scrollY": 2366.39990234375,
+      "sidebar": null,
+      "sidebarStyle": null,
+      "sourceTerms": [],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 0,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 390
+      }
+    },
+    {
+      "phase": "bottom",
+      "page": "method",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 16,
+        "right": 177.9499969482422,
+        "top": 26,
+        "width": 161.9499969482422,
+        "x": 16,
+        "y": 26
+      },
+      "documentHeight": 6576,
+      "documentWidth": 375,
+      "footer": null,
+      "header": null,
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 4,
+            "right": 121.0625,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 4,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 129.0625,
+            "right": 246.125,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 129.0625,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 895.7999877929688,
+            "height": 47,
+            "left": 254.125,
+            "right": 371.1875,
+            "top": 848.7999877929688,
+            "width": 117.0625,
+            "x": 254.125,
+            "y": 848.7999877929688
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": null,
+      "mainBottomPadding": "56px",
+      "mobile": true,
+      "nav": {
+        "bottom": 900,
+        "height": 56,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 844,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 844
+      },
+      "scrollY": 2066.39990234375,
+      "sidebar": null,
+      "sidebarStyle": null,
+      "sourceTerms": [],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 375.2000122070313,
+        "top": 0,
+        "width": 375.2000122070313,
+        "x": 0,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 900,
+        "width": 390
+      }
+    }
+  ],
+  "contentFits": [
+    {
+      "phase": "content-fits",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 288,
+        "right": 478.6000061035156,
+        "top": 25.200000762939453,
+        "width": 190.6000061035156,
+        "x": 288,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 2744,
+      "documentWidth": 1440,
+      "footer": {
+        "bottom": 2744,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 2648,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 2648
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 0,
+      "sidebar": {
+        "bottom": 2744,
+        "height": 2744,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 2702.39995098114,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 2687.199951171875,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 2687.199951171875
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 2702.39995098114,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 2687.199951171875,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 2687.199951171875
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 2702.39995098114,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 2687.199951171875,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 2687.199951171875
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1440,
+        "top": 0,
+        "width": 1184,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 2744,
+        "width": 1440
+      }
+    },
+    {
+      "phase": "content-fits",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 46.00000190734863,
+        "height": 20.80000114440918,
+        "left": 280,
+        "right": 470.6000061035156,
+        "top": 25.200000762939453,
+        "width": 190.6000061035156,
+        "x": 280,
+        "y": 25.200000762939453
+      },
+      "documentHeight": 3418,
+      "documentWidth": 1024,
+      "footer": {
+        "bottom": 3417.60009765625,
+        "height": 96,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 3321.60009765625,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 3321.60009765625
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 255.1999969482422,
+        "top": 0,
+        "width": 255.1999969482422,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 205.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 161.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 161.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 253.8000030517578,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 209.8000030517578,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 209.8000030517578
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 301.8000183105469,
+            "height": 44,
+            "left": 16,
+            "right": 239.1999969482422,
+            "top": 257.8000183105469,
+            "width": 223.1999969482422,
+            "x": 16,
+            "y": 257.8000183105469
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 16,
+        "right": 52,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 16,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 301.8000030517578,
+        "height": 167.8000030517578,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 134,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 134
+      },
+      "scrollY": 0,
+      "sidebar": {
+        "bottom": 3417.60009765625,
+        "height": 3417.60009765625,
+        "left": 0,
+        "right": 256,
+        "top": 0,
+        "width": 256,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 3376.00004863739,
+            "height": 15.199999809265137,
+            "left": 46,
+            "right": 102.73749923706056,
+            "top": 3360.800048828125,
+            "width": 56.73749923706055,
+            "x": 46,
+            "y": 3360.800048828125
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 3376.00004863739,
+            "height": 15.199999809265137,
+            "left": 112.95000457763672,
+            "right": 160.80000686645508,
+            "top": 3360.800048828125,
+            "width": 47.85000228881836,
+            "x": 112.95000457763672,
+            "y": 3360.800048828125
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 3376.00004863739,
+            "height": 15.199999809265137,
+            "left": 171.0124969482422,
+            "right": 198.18749809265137,
+            "top": 3360.800048828125,
+            "width": 27.17500114440918,
+            "x": 171.0124969482422,
+            "y": 3360.800048828125
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "28px",
+          "text": "aer."
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "13px",
+          "text": "Wind intelligence Pilot"
+        },
+        {
+          "color": "rgb(33, 74, 54)",
+          "fontSize": "12px",
+          "text": "Pilot"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "Analysis"
+        },
+        {
+          "color": "rgb(25, 47, 39)",
+          "fontSize": "13px",
+          "text": "Elexon data"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "WINDFOR · FUELHH · wind"
+        },
+        {
+          "color": "rgb(74, 91, 81)",
+          "fontSize": "12px",
+          "text": "January 2026 snapshot"
+        }
+      ],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 256,
+        "right": 1024,
+        "top": 0,
+        "width": 768,
+        "x": 256,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 3418,
+        "width": 1024
+      }
+    },
+    {
+      "phase": "content-fits",
+      "page": "decision",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 92,
+        "right": 262.5500030517578,
+        "top": 26,
+        "width": 170.5500030517578,
+        "x": 92,
+        "y": 26
+      },
+      "documentHeight": 3439,
+      "documentWidth": 768,
+      "footer": {
+        "bottom": 3439.200149536133,
+        "height": 76.80000305175781,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 3362.400146484375,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 3362.400146484375
+      },
+      "header": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 0,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 0
+      },
+      "links": [
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "15px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 132,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 88,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 88
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 180,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 136,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 136
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "15px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 228,
+            "height": 44,
+            "left": 13.600000381469728,
+            "right": 57.60000038146973,
+            "top": 184,
+            "width": 44,
+            "x": 13.600000381469728,
+            "y": 184
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": {
+        "bottom": 53.60000038146973,
+        "height": 36,
+        "left": 17.600000381469727,
+        "right": 53.60000038146973,
+        "top": 17.600000381469727,
+        "width": 36,
+        "x": 17.600000381469727,
+        "y": 17.600000381469727
+      },
+      "mainBottomPadding": "0px",
+      "mobile": false,
+      "nav": {
+        "bottom": 228,
+        "height": 140,
+        "left": 0,
+        "right": 71.20000457763672,
+        "top": 88,
+        "width": 71.20000457763672,
+        "x": 0,
+        "y": 88
+      },
+      "scrollY": 0,
+      "sidebar": {
+        "bottom": 3439.199951171875,
+        "height": 3439.199951171875,
+        "left": 0,
+        "right": 72,
+        "top": 0,
+        "width": 72,
+        "x": 0,
+        "y": 0
+      },
+      "sidebarStyle": {
+        "background": "rgb(241, 245, 239)",
+        "border": "rgb(213, 223, 215)",
+        "overflowY": "auto",
+        "position": "sticky"
+      },
+      "sourceTerms": [
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "WINDFOR",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "FUELHH",
+          "whiteSpace": "nowrap"
+        },
+        {
+          "rect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "text": "wind",
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 72,
+        "right": 768,
+        "top": 0,
+        "width": 696,
+        "x": 72,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 3439,
+        "width": 768
+      }
+    },
+    {
+      "phase": "content-fits",
+      "page": "accuracy",
+      "range": "2026-01-01 to 2026-01-01",
+      "accent": {
+        "borderRadius": "2px",
+        "bottom": "10px",
+        "left": "0px",
+        "top": "10px",
+        "width": "3px"
+      },
+      "breadcrumb": {
+        "bottom": 45.20000076293945,
+        "height": 19.200000762939453,
+        "left": 16,
+        "right": 207.9499969482422,
+        "top": 26,
+        "width": 191.9499969482422,
+        "x": 16,
+        "y": 26
+      },
+      "documentHeight": 4096,
+      "documentWidth": 390,
+      "footer": null,
+      "header": null,
+      "links": [
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Decision desk",
+          "rect": {
+            "bottom": 4091.800048828125,
+            "height": 47,
+            "left": 4,
+            "right": 126.125,
+            "top": 4044.800048828125,
+            "width": 122.125,
+            "x": 4,
+            "y": 4044.800048828125
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgb(230, 240, 231)",
+          "color": "rgb(33, 74, 54)",
+          "current": "page",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "iconWidth": "20",
+          "label": "Forecast accuracy",
+          "rect": {
+            "bottom": 4091.800048828125,
+            "height": 47,
+            "left": 134.125,
+            "right": 256.2625045776367,
+            "top": 4044.800048828125,
+            "width": 122.13750457763672,
+            "x": 134.125,
+            "y": 4044.800048828125
+          },
+          "stroke": "1.75"
+        },
+        {
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(74, 91, 81)",
+          "current": null,
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "iconWidth": "20",
+          "label": "Methodology",
+          "rect": {
+            "bottom": 4091.800048828125,
+            "height": 47,
+            "left": 264.26251220703125,
+            "right": 386.400016784668,
+            "top": 4044.800048828125,
+            "width": 122.13750457763672,
+            "x": 264.26251220703125,
+            "y": 4044.800048828125
+          },
+          "stroke": "1.75"
+        }
+      ],
+      "logo": null,
+      "mainBottomPadding": "56px",
+      "mobile": true,
+      "nav": {
+        "bottom": 4096,
+        "height": 56,
+        "left": 0,
+        "right": 390.3999938964844,
+        "top": 4040,
+        "width": 390.3999938964844,
+        "x": 0,
+        "y": 4040
+      },
+      "scrollY": 0,
+      "sidebar": null,
+      "sidebarStyle": null,
+      "sourceTerms": [],
+      "text": [],
+      "topbar": {
+        "bottom": 72,
+        "height": 72,
+        "left": 0,
+        "right": 390.3999938964844,
+        "top": 0,
+        "width": 390.3999938964844,
+        "x": 0,
+        "y": 0
+      },
+      "url": "http://127.0.0.1:8000/",
+      "viewport": {
+        "height": 4096,
+        "width": 390
+      }
+    }
+  ],
+  "keyboard": [
+    {
+      "width": 1440,
+      "focusVisible": true,
+      "label": "Decision desk",
+      "offset": "1.6px",
+      "outline": "rgb(0, 95, 204) solid 1.6px",
+      "rect": {
+        "bottom": 205.8000030517578,
+        "height": 44,
+        "left": 16,
+        "right": 239.1999969482422,
+        "top": 161.8000030517578,
+        "width": 223.1999969482422,
+        "x": 16,
+        "y": 161.8000030517578
+      },
+      "tag": "A"
+    },
+    {
+      "width": 1440,
+      "after": "Decision desk",
+      "label": "Forecast accuracy",
+      "tag": "A",
+      "text": "Forecast accuracy"
+    },
+    {
+      "width": 1440,
+      "after": "Forecast accuracy",
+      "label": "Methodology",
+      "tag": "A",
+      "text": "Methodology"
+    },
+    {
+      "width": 1440,
+      "after": "Methodology",
+      "label": "Historical replay: replay of past data, not live",
+      "tag": "BUTTON",
+      "text": "Historical replay"
+    },
+    {
+      "width": 768,
+      "focusVisible": true,
+      "label": "Decision desk",
+      "offset": "1.6px",
+      "outline": "rgb(0, 95, 204) solid 1.6px",
+      "rect": {
+        "bottom": 132,
+        "height": 44,
+        "left": 13.600000381469728,
+        "right": 57.60000038146973,
+        "top": 88,
+        "width": 44,
+        "x": 13.600000381469728,
+        "y": 88
+      },
+      "tag": "A",
+      "tooltip": "Decision desk"
+    },
+    {
+      "width": 768,
+      "after": "Decision desk",
+      "label": "Forecast accuracy",
+      "tag": "A",
+      "text": "Forecast accuracy"
+    },
+    {
+      "width": 768,
+      "after": "Forecast accuracy",
+      "label": "Methodology",
+      "tag": "A",
+      "text": "Methodology"
+    },
+    {
+      "width": 768,
+      "after": "Methodology",
+      "label": "Elexon data: WINDFOR · FUELHH · wind. January 2026 snapshot",
+      "tag": "SPAN",
+      "text": ""
+    },
+    {
+      "width": 390,
+      "focusVisible": true,
+      "label": "Forecast accuracy",
+      "offset": "1.6px",
+      "outline": "rgb(0, 95, 204) solid 1.6px",
+      "rect": {
+        "bottom": 895.7999877929688,
+        "height": 47,
+        "left": 129.0625,
+        "right": 246.125,
+        "top": 848.7999877929688,
+        "width": 117.0625,
+        "x": 129.0625,
+        "y": 848.7999877929688
+      },
+      "tag": "A"
+    },
+    {
+      "width": 390,
+      "after": "Decision desk",
+      "label": "Forecast accuracy",
+      "tag": "A",
+      "text": "Accuracy"
+    },
+    {
+      "width": 390,
+      "after": "Forecast accuracy",
+      "label": "Methodology",
+      "tag": "A",
+      "text": "Methodology"
+    },
+    {
+      "width": 390,
+      "after": "Methodology",
+      "label": "Historical replay: replay of past data, not live",
+      "tag": "BUTTON",
+      "text": "Historical replay"
+    }
+  ]
+}
