@@ -1,0 +1,22 @@
+{
+  "source": "Elexon Insights",
+  "mode": "historical-replay",
+  "synthetic": false,
+  "decision_start": "2026-01-01",
+  "decision_end": "2026-01-31",
+  "delivery_start": "2026-01-02",
+  "delivery_end": "2026-02-01",
+  "built_at": "2026-10-27T22:33:40.771573+00:00",
+  "forecast_rows": 19272,
+  "actual_rows": 1488,
+  "identical_duplicates_removed": 0,
+  "database_sha256": "70d1ffe4d266312d5dbe782dee474e6df21f5e0378459ef16bac9f85762ade70",
+  "alignment": "Exact startTime match; no interpolation or resampling",
+  "source_requests": 64,
+  "retrieved_at": "2026-10-27T22:32:42.517166+00:00",
+  "default_decision_date": "2026-01-15",
+  "default_cutoff": "09:30",
+  "notice": "Historical replay, not a live feed or trade recommendation.",
+  "native_resolution": "Hourly WINDFOR; half-hourly FUELHH. Exact timestamp matching.",
+  "actual_vintage": "Latest actual publication retrieved in the immutable snapshot."
+}

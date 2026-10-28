@@ -1,0 +1,2280 @@
+{
+  "counts": {
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=true": 2,
+    "/api/accuracy?start=2026-01-01&end=2026-01-31&cutoff=09:30": 1,
+    "/api/meta": 1,
+    "/api/decision?decision_date=2026-01-16&cutoff=09:30&reveal=true": 1
+  },
+  "rootRenders": 56,
+  "layoutShiftSum": 0.1018665230878431,
+  "profiles": [
+    {
+      "id": "workspace",
+      "phase": "mount",
+      "actualDuration": 4.599999999627471,
+      "baseDuration": 3.600000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.09999999962747097,
+      "baseDuration": 2.700000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5.499999999068677,
+      "baseDuration": 6.20000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.2000000001862645,
+      "baseDuration": 5.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 8.400000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 7.699999999254942,
+      "baseDuration": 11.900000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.599999999627471,
+      "baseDuration": 11.499999999068677
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 9.600000000558794,
+      "baseDuration": 7.1000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.5,
+      "baseDuration": 7.300000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.900000000372529,
+      "baseDuration": 8.900000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 7.2999999998137355,
+      "baseDuration": 14.100000000558794
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 2.7000000001862645,
+      "baseDuration": 15.200000000186265
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.400000000372529,
+      "baseDuration": 0.8000000007450581
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.800000000745058,
+      "baseDuration": 2.800000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.40000000037252903,
+      "baseDuration": 3.200000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.2000000001862645,
+      "baseDuration": 4.100000002421439
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.7999999998137355,
+      "baseDuration": 7.800000003539026
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 7.600000003352761
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 7.900000001303852,
+      "baseDuration": 5.900000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 6.1000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 6.800000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.800000000745058,
+      "baseDuration": 9.800000003539026
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 9.70000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.400000000372529,
+      "baseDuration": 2.699999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.30000000074505806,
+      "baseDuration": 3
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 3.400000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 6.300000001676381
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 6.300000002607703
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 9.5,
+      "baseDuration": 7.300000001676381
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 7.600000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 8.20000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.200000001117587,
+      "baseDuration": 11.800000002607703
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 10.900000002235174
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.300000000745058,
+      "baseDuration": 0.8000000007450581
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.5,
+      "baseDuration": 2.799999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.19999999925494194,
+      "baseDuration": 2.899999998509884
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6999999992549419,
+      "baseDuration": 3.3999999975785613
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.6000000005587935,
+      "baseDuration": 6.999999997206032
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.099999997764826
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.299999999813735,
+      "baseDuration": 6.600000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 6.70000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.8000000007450581,
+      "baseDuration": 7.400000003166497
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 10.400000002235174
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.1000000005587935,
+      "baseDuration": 10.400000002235174
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.500000000931323,
+      "baseDuration": 2.8999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 3
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 3.5000000009313226
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.699999999254942,
+      "baseDuration": 7.500000000931323
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.6000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 7.7999999998137355,
+      "baseDuration": 5.7999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.30000000074505806,
+      "baseDuration": 6
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 6.400000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 9.399999998509884
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.1000000005587935,
+      "baseDuration": 9.799999999813735
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.2000000001862645,
+      "baseDuration": 0.5
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.300000000745058,
+      "baseDuration": 2.4999999990686774
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 2.6999999983236194
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.8000000007450581,
+      "baseDuration": 3.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 6.500000000931323
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.599999999627471,
+      "baseDuration": 6.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.800000000745058,
+      "baseDuration": 6.79999999795109
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.19999999925494194,
+      "baseDuration": 6.999999997206032
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 7.599999996833503
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.9999999990686774,
+      "baseDuration": 10.099999994970858
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 10.199999995529652
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.500000000931323,
+      "baseDuration": 2.8999999975785613
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 3.199999997392297
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6999999992549419,
+      "baseDuration": 3.699999997392297
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.5,
+      "baseDuration": 6.999999999068677
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.8000000007450581,
+      "baseDuration": 7.099999998696148
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.100000000558794,
+      "baseDuration": 5.800000002607703
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 6.000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.099999999627471,
+      "baseDuration": 6.800000001676381
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 9.700000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 9.800000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.2000000001862645,
+      "baseDuration": 0.5
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 2.600000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 2.9000000013038516
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 3.300000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.099999999627471,
+      "baseDuration": 6.7999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6000000005587935,
+      "baseDuration": 6.7000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 7.8999999994412065,
+      "baseDuration": 6.2000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.30000000074505806,
+      "baseDuration": 6.400000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 6.8999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4,
+      "baseDuration": 9.799999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.2000000001862645,
+      "baseDuration": 9.899999998509884
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4,
+      "baseDuration": 2.8999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 3.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 3.4999999990686774
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 6.999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.199999998323619
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.199999999254942,
+      "baseDuration": 6.2000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.19999999925494194,
+      "baseDuration": 6.2999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 6.8999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4,
+      "baseDuration": 9.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.099999999627471,
+      "baseDuration": 9.399999998509884
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.300000000745058,
+      "baseDuration": 0.7999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.5,
+      "baseDuration": 2.8000000016763806
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.30000000074505806,
+      "baseDuration": 3.000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6999999992549419,
+      "baseDuration": 3.500000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.5,
+      "baseDuration": 6.400000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 6.600000002421439
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.700000000186265,
+      "baseDuration": 6.699999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 6.8999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 7.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.900000000372529,
+      "baseDuration": 10.399999999441206
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.099999999627471,
+      "baseDuration": 10.699999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.900000000372529,
+      "baseDuration": 3.6000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 3.7000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6999999992549419,
+      "baseDuration": 4.1000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.7000000001862645,
+      "baseDuration": 7.7999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.7000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.399999999441206,
+      "baseDuration": 6.599999997764826
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 6.699999998323619
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.199999998323619
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 10.29999999795109
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.099999999627471,
+      "baseDuration": 10.499999997206032
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1,
+      "baseDuration": 0.5
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.3999999994412065,
+      "baseDuration": 2.6999999983236194
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 2.899999998509884
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.900000000372529,
+      "baseDuration": 3.199999997392297
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.3999999994412065,
+      "baseDuration": 6.599999997764826
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.599999999627471,
+      "baseDuration": 6.599999997764826
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.299999999813735,
+      "baseDuration": 6.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 6.499999999068677
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 7.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.199999999254942,
+      "baseDuration": 10.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.2000000001862645,
+      "baseDuration": 10.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4,
+      "baseDuration": 2.4999999972060323
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 2.699999997392297
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6000000005587935,
+      "baseDuration": 3.1999999983236194
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 6.599999997764826
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 6.599999997764826
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.300000000745058,
+      "baseDuration": 6.7000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 7
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.300000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.7999999998137355,
+      "baseDuration": 10.19999999832362
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 10.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.400000000372529,
+      "baseDuration": 0.2999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.699999999254942,
+      "baseDuration": 2.9999999990686774
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.40000000037252903,
+      "baseDuration": 3.3999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.8000000007450581,
+      "baseDuration": 3.7999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.6000000005587935,
+      "baseDuration": 7.499999999068677
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.499999999068677
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.600000000558794,
+      "baseDuration": 6.799999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.30000000074505806,
+      "baseDuration": 7.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 7.699999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.7000000001862645,
+      "baseDuration": 12.299999999813735
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 2.7999999998137355,
+      "baseDuration": 13.900000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.1000000005587935,
+      "baseDuration": 3.2000000020489097
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 3.300000002607703
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 3.800000002607703
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 6.70000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.5,
+      "baseDuration": 6.70000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 9.400000000372529,
+      "baseDuration": 7.400000002235174
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.40000000037252903,
+      "baseDuration": 7.800000002607703
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.2000000001862645,
+      "baseDuration": 8.700000002980232
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.699999999254942,
+      "baseDuration": 12.100000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 11.600000002421439
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.199999999254942,
+      "baseDuration": 0.7999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 3.7999999998137355,
+      "baseDuration": 2.600000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 2.8000000016763806
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 3.1000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 6.600000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 6.600000002421439
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 7.3999999994412065,
+      "baseDuration": 5.2000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 5.5
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 6.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.800000000745058,
+      "baseDuration": 8.899999999441206
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 8.799999999813735
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 3.7999999998137355,
+      "baseDuration": 3.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 3.3999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6999999992549419,
+      "baseDuration": 3.8999999975785613
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.599999999627471,
+      "baseDuration": 7.599999998696148
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6000000005587935,
+      "baseDuration": 7.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8,
+      "baseDuration": 6.1000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 6.300000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 6.900000002235174
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.3999999994412065,
+      "baseDuration": 10.100000002421439
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.900000000372529,
+      "baseDuration": 10.00000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.2999999998137355,
+      "baseDuration": 0.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.099999999627471,
+      "baseDuration": 2.899999998509884
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.19999999925494194,
+      "baseDuration": 2.999999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1,
+      "baseDuration": 3.799999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.800000000745058,
+      "baseDuration": 6.499999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 6.599999996833503
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.700000000186265,
+      "baseDuration": 6.500000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 6.70000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.6999999992549419,
+      "baseDuration": 7.300000001676381
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4,
+      "baseDuration": 10.30000000167638
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.8000000007450581,
+      "baseDuration": 10.200000003911555
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 3.7999999998137355,
+      "baseDuration": 2.699999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 2.8999999994412065
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.599999999627471,
+      "baseDuration": 3.299999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 6.799999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.599999999627471,
+      "baseDuration": 6.799999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 9,
+      "baseDuration": 6.700000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 6.800000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.2000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 3.7000000001862645,
+      "baseDuration": 10.400000000372529
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.900000000372529,
+      "baseDuration": 10.400000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.2999999998137355,
+      "baseDuration": 0.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.7999999998137355,
+      "baseDuration": 3.299999998882413
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.30000000074505806,
+      "baseDuration": 3.4999999990686774
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7999999998137355,
+      "baseDuration": 4.199999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.7999999998137355,
+      "baseDuration": 7.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.5,
+      "baseDuration": 7.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8.000000000931323,
+      "baseDuration": 6.700000002980232
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 6.800000003539026
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 7.300000003539026
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2000000001862645,
+      "baseDuration": 10.300000003539026
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 1.099999999627471,
+      "baseDuration": 10.300000003539026
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 3.0000000009313226
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.20000000018626451,
+      "baseDuration": 3.200000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 3.6000000005587935
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.400000000372529,
+      "baseDuration": 6.800000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 0.599999999627471,
+      "baseDuration": 6.700000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5.7999999998137355,
+      "baseDuration": 8.100000001490116
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.599999999627471,
+      "baseDuration": 8.700000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.7999999998137355,
+      "baseDuration": 6.900000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.2999999998137355,
+      "baseDuration": 7.700000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 6.1000000005587935,
+      "baseDuration": 8.300000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.7000000001862645,
+      "baseDuration": 8.900000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5.599999999627471,
+      "baseDuration": 7.900000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.8999999994412065,
+      "baseDuration": 8.100000002421439
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5,
+      "baseDuration": 7.500000002793968
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.900000000372529,
+      "baseDuration": 8.200000002980232
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5.2000000001862645,
+      "baseDuration": 7.500000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.2000000001862645,
+      "baseDuration": 8.80000000167638
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 6,
+      "baseDuration": 8.20000000204891
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.099999999627471,
+      "baseDuration": 8.400000001303852
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5.2999999998137355,
+      "baseDuration": 7.7000000001862645
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.800000000745058,
+      "baseDuration": 8.30000000167638
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 5.599999999627471,
+      "baseDuration": 8.100000000558794
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 5.2999999998137355,
+      "baseDuration": 8.599999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 4.8999999994412065,
+      "baseDuration": 7.099999999627471
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 4.7999999998137355,
+      "baseDuration": 8.100000000558794
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.09999999962747097,
+      "baseDuration": 8.200000000186265
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.09999999962747097,
+      "baseDuration": 8.200000000186265
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.2999999998137355,
+      "baseDuration": 8.299999999813735
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.7000000001862645,
+      "baseDuration": 8.200000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0,
+      "baseDuration": 8.200000001117587
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 8,
+      "baseDuration": 13.300000000745058
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 9.599999999627471,
+      "baseDuration": 11.399999999441206
+    },
+    {
+      "id": "workspace",
+      "phase": "nested-update",
+      "actualDuration": 6.3999999994412065,
+      "baseDuration": 11.499999999068677
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.300000000745058,
+      "baseDuration": 9.000000000931323
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 9.499999999068677,
+      "baseDuration": 9.699999999254942
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 3.8999999994412065,
+      "baseDuration": 9.499999998137355
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 1.199999999254942,
+      "baseDuration": 8.699999997392297
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0,
+      "baseDuration": 8.699999997392297
+    },
+    {
+      "id": "workspace",
+      "phase": "update",
+      "actualDuration": 0.7000000001862645,
+      "baseDuration": 8.29999999795109
+    }
+  ],
+  "toggleChecks": [
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 217,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 219,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 219,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 221,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 221,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 223,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 223,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 225,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 225,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 227,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 227,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 229,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 229,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 231,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 231,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 233,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 233,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 235,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    },
+    {
+      "before": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 235,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "after": {
+        "scrollY": 628.7999877929688,
+        "url": "http://127.0.0.1:8000/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 1048,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1521,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1794,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 594,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 863,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 52,
+        "layoutShiftSum": 0.07650301492247592,
+        "profileCount": 237,
+        "calls": 3,
+        "axis": "03,0006,0009,00011,000"
+      },
+      "sameChart": true,
+      "sameTable": true
+    }
+  ]
+}

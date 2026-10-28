@@ -1,0 +1,102 @@
+{
+  "counts": {
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=false": 22,
+    "/api/meta": 1,
+    "/api/accuracy?start=2026-01-01&end=2026-01-31&cutoff=09:30": 20,
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=true": 1
+  },
+  "rootRenders": 0,
+  "layoutShiftSum": 1.2603570299305669,
+  "toggleChecks": [
+    {
+      "before": {
+        "scrollY": 572.7999877929688,
+        "url": "http://127.0.0.1:8001/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 992,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1465,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1738,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 538,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 807,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 0,
+        "calls": 42,
+        "axis": "03,0006,0009,00012,000"
+      },
+      "after": {
+        "scrollY": 202.39999389648438,
+        "url": "http://127.0.0.1:8001/",
+        "boxes": {},
+        "rootRenders": 0,
+        "calls": 43
+      },
+      "sameChart": false,
+      "sameTable": false
+    },
+    {
+      "before": {
+        "scrollY": 572.7999877929688,
+        "url": "http://127.0.0.1:8001/",
+        "boxes": {
+          ".forecast-chart": {
+            "top": 992,
+            "height": 330,
+            "width": 627
+          },
+          ".context-panel": {
+            "top": 1465,
+            "height": 249,
+            "width": 981
+          },
+          ".audit-panel": {
+            "top": 1738,
+            "height": 749,
+            "width": 981
+          },
+          ".kpi-grid": {
+            "top": 538,
+            "height": 245,
+            "width": 981
+          },
+          ".integrity-panel": {
+            "top": 807,
+            "height": 531,
+            "width": 280
+          }
+        },
+        "rootRenders": 0,
+        "calls": 43,
+        "axis": "03,0006,0009,00012,000"
+      },
+      "after": {
+        "scrollY": 202.39999389648438,
+        "url": "http://127.0.0.1:8001/",
+        "boxes": {},
+        "rootRenders": 0,
+        "calls": 44
+      },
+      "sameChart": false,
+      "sameTable": false
+    }
+  ]
+}

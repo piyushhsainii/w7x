@@ -8,9 +8,10 @@ import {
   Target,
   Wind,
 } from "lucide-react";
-import type { Meta } from "./api";
+import { DecisionExport } from "./components/QueryControls";
+import { setOutcome } from "./outcome";
 import { dateLabel, shiftDate, validClock, validDay } from "./format";
-import { useResource } from "./hooks";
+import { SnapshotSubscriptions, useMetaQuery } from "./query";
 import AccuracyView from "./components/AccuracyView";
 import DecisionView from "./components/DecisionView";
 import MethodView from "./components/MethodView";
@@ -25,6 +26,12 @@ import {
 type View = "decision" | "accuracy" | "method";
 
 export default function App() {
+  // Compile-time diagnostic only; removed from ordinary production builds.
+  useEffect(() => {
+    if (import.meta.env.DEV || import.meta.env.MODE === "audit") {
+      document.dispatchEvent(new Event("aer:app-render"));
+    }
+  });
   const [view, setView] = useState<View>("decision");
   const [day, setDay] = useState("2026-01-15");
   const [cutoff, setCutoff] = useState("09:30");
@@ -34,9 +41,8 @@ export default function App() {
   const [end, setEnd] = useState("2026-01-31");
   const [draftStart, setDraftStart] = useState(start);
   const [draftEnd, setDraftEnd] = useState(end);
-  const [reveal, setReveal] = useState(false);
   const [filterError, setFilterError] = useState("");
-  const { data: meta } = useResource<Meta>("/api/meta");
+  const { data: meta } = useMetaQuery();
   const navigation = [
     { id: "decision" as const, label: "Decision desk", icon: CalendarClock },
     { id: "accuracy" as const, label: "Forecast accuracy", icon: Target },
@@ -58,7 +64,7 @@ export default function App() {
         if (day !== draftDay || cutoff !== draftCutoff) {
           setDay(draftDay);
           setCutoff(draftCutoff);
-          setReveal(false);
+          setOutcome(`${draftDay}|${draftCutoff}`, false);
         }
       } else {
         if (!validDay(draftStart) || !validDay(draftEnd)) {
@@ -80,9 +86,7 @@ export default function App() {
 
   const changeDay = (value: string) => {
     if (!validDay(value)) return;
-    setDay(value);
     setDraftDay(value);
-    setReveal(false);
   };
   useEffect(() => {
     if (view !== "decision") return;
@@ -97,18 +101,18 @@ export default function App() {
         )
       )
         return;
-      if (event.key === "ArrowLeft" && day !== "2026-01-01") {
+      if (event.key === "ArrowLeft" && draftDay !== "2026-01-01") {
         event.preventDefault();
-        changeDay(shiftDate(day, -1));
+        changeDay(shiftDate(draftDay, -1));
       }
-      if (event.key === "ArrowRight" && day !== "2026-01-31") {
+      if (event.key === "ArrowRight" && draftDay !== "2026-01-31") {
         event.preventDefault();
-        changeDay(shiftDate(day, 1));
+        changeDay(shiftDate(draftDay, 1));
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [view, day]);
+  }, [view, draftDay]);
 
   const navigate = (next: View) => {
     setView(next);
@@ -118,7 +122,7 @@ export default function App() {
   const inspect = (selected: string) => {
     setDay(selected);
     setDraftDay(selected);
-    setReveal(true);
+    setOutcome(`${selected}|${cutoff}`, true);
     navigate("decision");
   };
   const title =
@@ -135,6 +139,12 @@ export default function App() {
         : "Publication timing, exact timestamp matching, error definitions, and the limits of this pilot.";
   return (
     <div className="app-shell">
+      <SnapshotSubscriptions
+        day={day}
+        cutoff={cutoff}
+        start={start}
+        end={end}
+      />
       <a className="skip-link" href="#main">
         Skip to content
       </a>
@@ -205,10 +215,10 @@ export default function App() {
                     label="Decision date"
                     value={draftDay}
                     onChange={setDraftDay}
-                    previous={() => changeDay(shiftDate(day, -1))}
-                    next={() => changeDay(shiftDate(day, 1))}
-                    previousDisabled={day === "2026-01-01"}
-                    nextDisabled={day === "2026-01-31"}
+                    previous={() => changeDay(shiftDate(draftDay, -1))}
+                    next={() => changeDay(shiftDate(draftDay, 1))}
+                    previousDisabled={draftDay === "2026-01-01"}
+                    nextDisabled={draftDay === "2026-01-31"}
                   />
                 ) : (
                   <>
@@ -226,13 +236,13 @@ export default function App() {
                 )}
                 <CutoffField value={draftCutoff} onChange={setDraftCutoff} />
                 <div className="filter-export">
-                  <ExportButton
-                    href={
-                      view === "decision"
-                        ? `/api/export?decision_date=${day}&cutoff=${cutoff}&reveal=${reveal}`
-                        : `/api/accuracy/export?start=${start}&end=${end}&cutoff=${cutoff}`
-                    }
-                  />
+                  {view === "decision" ? (
+                    <DecisionExport day={day} cutoff={cutoff} />
+                  ) : (
+                    <ExportButton
+                      href={`/api/accuracy/export?start=${start}&end=${end}&cutoff=${cutoff}`}
+                    />
+                  )}
                 </div>
               </div>
               {filterError && (
@@ -260,8 +270,6 @@ export default function App() {
             <DecisionView
               day={day}
               cutoff={cutoff}
-              reveal={reveal}
-              setReveal={setReveal}
               openAccuracy={() => navigate("accuracy")}
             />
           ) : view === "accuracy" ? (
@@ -272,7 +280,7 @@ export default function App() {
               inspect={inspect}
             />
           ) : (
-            <MethodView meta={meta} cutoff={cutoff} />
+            <MethodView meta={meta ?? null} cutoff={cutoff} />
           )}
           <footer className="footer">
             <span>aer. · Wind forecast decision support</span>

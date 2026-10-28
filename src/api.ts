@@ -72,20 +72,31 @@ export type Meta = {
   synthetic: boolean;
   source_requests: number;
 };
+export class HttpError extends Error {
+  constructor(
+    message: string,
+    public readonly status: number,
+  ) {
+    super(message);
+    this.name = "HttpError";
+  }
+}
 export async function getJson<T>(
   path: string,
   signal?: AbortSignal,
 ): Promise<T> {
   const response = await fetch(path, {
     signal,
+    cache: "no-cache",
     headers: { Accept: "application/json" },
   });
   if (!response.ok) {
     const body = await response.json().catch(() => null);
-    throw new Error(
+    throw new HttpError(
       typeof body?.detail === "string"
         ? body.detail
         : `Unable to load data (${response.status}). Please retry.`,
+      response.status,
     );
   }
   return response.json();

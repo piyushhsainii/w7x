@@ -56,14 +56,24 @@ async def security_headers(request: Request, call_next):
     except Exception:
         logging.exception("Request failed")
         response = Response('{"detail":"Data temporarily unavailable. Check the snapshot and server logs."}', status_code=503, media_type="application/json")
+    cache_paths = {"/api/meta", "/api/health", "/api/decision", "/api/accuracy", "/api/export", "/api/accuracy/export"}
+    if request.method == "GET" and request.url.path in cache_paths and response.status_code == 200:
+        body = b"".join([chunk async for chunk in response.body_iterator])
+        etag = '"' + hashlib.sha256(body).hexdigest() + '"'
+        headers = dict(response.headers)
+        headers.update({"Cache-Control": "public, max-age=300, stale-while-revalidate=600", "ETag": etag})
+        candidates = [value.strip().removeprefix("W/") for value in request.headers.get("if-none-match", "").split(",")]
+        if etag in candidates or "*" in candidates:
+            headers.pop("content-length", None)
+            response = Response(status_code=304, headers=headers, background=response.background)
+        else:
+            response = Response(body, status_code=response.status_code, headers=headers, background=response.background)
     response.headers.update({"X-Content-Type-Options": "nosniff", "X-Frame-Options": "DENY",
                              "Referrer-Policy": "strict-origin-when-cross-origin",
                              "Permissions-Policy": "camera=(), microphone=(), geolocation=()"})
     # Swagger's own third-party assets are deliberately excluded from the application CSP.
     if request.url.path not in ("/api/docs", "/api/docs/oauth2-redirect"):
         response.headers["Content-Security-Policy"] = CSP
-    if request.url.path.startswith("/api/") and response.status_code == 200:
-        response.headers["Cache-Control"] = "public, max-age=300"
     return response
 
 

@@ -1976,3 +1976,47 @@ thead th:first-child {
     scroll-behavior: auto !important;
   }
 }
+
+/* Snapshot refresh and outcome concealment preserve geometry. */
+.main-column,
+main {
+  overflow-anchor: auto;
+}
+.query-controls {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  color: var(--color-muted);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.outcome-stack {
+  display: inline-grid;
+  vertical-align: top;
+}
+.outcome-stack > span {
+  grid-area: 1 / 1;
+}
+.decision-audit-table {
+  table-layout: fixed;
+  min-width: 850px;
+}
+.outcome-button {
+  min-width: 208px;
+}
+.refresh-spin {
+  display: inline-flex;
+  animation: refresh-turn 1s linear infinite;
+}
+@keyframes refresh-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .refresh-spin {
+    animation: none;
+  }
+}

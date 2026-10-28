@@ -82,3 +82,34 @@ def test_cache_does_not_leak_revealed_data_into_hidden_response():
     client.get("/api/decision?reveal=true")
     hidden = client.get("/api/decision?reveal=false").json()
     assert all(r["actual_mw"] is None for r in hidden["rows"])
+
+
+@pytest.mark.parametrize("path", ["/api/health", "/api/meta", "/api/decision?reveal=true", "/api/decision?reveal=false", "/api/accuracy", "/api/export", "/api/accuracy/export"])
+def test_strong_etag_and_conditional_get_preserve_payload(path):
+    import hashlib
+    first = client.get(path)
+    etag = '"' + hashlib.sha256(first.content).hexdigest() + '"'
+    assert first.headers["etag"] == etag
+    assert first.headers["cache-control"] == "public, max-age=300, stale-while-revalidate=600"
+    assert client.get(path).content == first.content
+    for candidate in [etag, "W/" + etag, '"other", ' + etag, "*"]:
+        response = client.get(path, headers={"If-None-Match": candidate})
+        assert response.status_code == 304
+        assert response.content == b""
+        assert response.headers["etag"] == etag
+        assert response.headers["x-content-type-options"] == "nosniff"
+    assert client.get(path, headers={"If-None-Match": '"other"'}).status_code == 200
+
+
+def test_validation_errors_are_not_cached():
+    response = client.get("/api/decision?cutoff=bad", headers={"If-None-Match": "*"})
+    assert response.status_code == 422
+    assert "etag" not in response.headers
+    assert "cache-control" not in response.headers
+
+
+def test_etag_is_specific_to_representation():
+    hidden = client.get("/api/decision?reveal=false")
+    revealed = client.get("/api/decision?reveal=true", headers={"If-None-Match": hidden.headers["etag"]})
+    assert revealed.status_code == 200
+    assert hidden.headers["etag"] != revealed.headers["etag"]

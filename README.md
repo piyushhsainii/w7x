@@ -18,7 +18,7 @@ Open http://localhost:8000. The included, checksum-verified historical snapshot 
 
 ## Run without Docker
 
-Requires Python 3.11+ and Node 22.12+.
+Requires Python 3.11+ and Node 22.13+ (or Node 24).
 
 ```sh
 python -m venv .venv
@@ -54,6 +54,8 @@ Deploy the repository root, not `src/` or `dist/`. Vercel builds React and bundl
 3. **Forecast accuracy:** filter January decision dates; inspect pooled MAE, RMSE, bias, P90, WAPE, overforecast risk, coverage, and daily scores. Select a daily score to replay it.
 4. **Methodology:** explains the formulas, timing rules, source snapshot, and limitations inside the product.
 
+The browser caches immutable results by date/range/cutoff for the session, with no automatic focus/reconnect/navigation refetch. Each workspace offers an explicit refresh and update timestamp. The outcome toggle reveals public actuals already loaded in memory: concealment is visual, **not access control**. Both representations remain supported by the API and CSV export. See the [performance changelog](docs/performance-review/CHANGELOG.md) and [measured before/after report](docs/performance-review/REPORT.md).
+
 ## Data and assumptions
 
 - **Scope:** only Elexon `WINDFOR` forecasts and `FUELHH` actuals where `fuelType=WIND`. No weather, prices, demand, or external generation data are added.
@@ -87,7 +89,7 @@ Percentiles use linear interpolation between ordered observations. Pooled metric
 |---|---|
 | `src/App.tsx` | Navigation, active decision context, automatic filters, and keyboard day navigation |
 | `src/components/` | Decision desk, accuracy, methodology, and shared accessible UI components |
-| `src/hooks.ts`, `src/format.ts` | Existing read-only fetch behavior and consistent UK display formatting |
+| `src/query.ts`, `src/outcome.ts`, `src/format.ts` | Shared TanStack query cache, UI-only outcome state, and UK display formatting |
 | `src/api.ts` | Typed API contracts and HTTP error handling |
 | `src/tokens.css`, `src/styles.css` | Shared type, spacing, contrast, semantic color tokens, and responsive layout |
 | `src/main.tsx`, `index.html`, `public/` | App bootstrapping, local font imports, favicon |
@@ -98,14 +100,14 @@ Percentiles use linear interpolation between ordered observations. Pooled metric
 | `data/wind.sqlite` | Immutable indexed forecast/actual snapshot |
 | `data/manifest.json` | Source URLs, retrieval times, checksums, row counts |
 | `data/raw/` | Original compressed Elexon responses and metadata for reproducibility |
-| `tests/` | Calculation, no-hindsight, boundary, export, validation, and API tests |
+| `tests/` | Calculation, timing, exports, cache headers, and mocked-fetch React integration tests |
 | `docs/presentation-guide.md` | Plain-language explanation and timed video script |
 | `docs/architecture.md` | Design choices, security, limitations, and future extension |
 | `docs/verification.md` | Actual verification results and deployment status |
 | `docs/ui-review/` | UI changelog, self-check, validation evidence, and before/after screenshots |
 | `Dockerfile`, `compose.yaml` | Container build and hardened local runtime |
 | `vercel.json`, `.vercelignore` | Vercel static frontend and Python function deployment |
-| `.github/workflows/checks.yml` | Python tests, TypeScript/Vite build, Docker build on GitHub |
+| `.github/workflows/checks.yml` | Python and frontend tests, TypeScript/Vite build, Docker build on GitHub |
 | `requirements.lock`, `package-lock.json` | Pinned dependency resolutions |
 
 The reference image does not identify a typeface. Inter is used as a close sans-serif match, with locally hosted assets. The reference’s greys, soft shadows, rounded surfaces, pastel header treatment, and generous spacing are adapted to a readable analytical interface.
@@ -137,6 +139,7 @@ Run ingestion as a separate build/operator step, not in a public request handler
 
 ```sh
 .venv/Scripts/python.exe -m pytest -q
+npm test
 npm run build
 docker compose up --build
 ```
@@ -147,7 +150,7 @@ Core tests include publication exactly at and just after cutoff, independent sel
 
 Public, non-sensitive Elexon data is served read-only. There are no accounts, uploaded files, trading credentials, orders, arbitrary fetch URLs, or client-supplied database paths. All SQL values are parameterized, date ranges are bounded to January, errors avoid exposing stack traces, and no permissive CORS is enabled. Exports contain only system dates and numeric source values. HTTP security headers protect the UI; TLS and edge traffic controls are provided by the deployment platform.
 
-SQLite opens read-only and immutable, using indexed target/publication keys. Lightweight standard-library calculations avoid pandas/ML cold-start overhead. Bounded memoization and response caching reuse immutable analysis. Actuals are omitted from decision responses until explicitly revealed. Fonts are local, and chart data is small. The non-root Docker runtime drops Linux capabilities under Compose. Before extending to private portfolios or execution, add authentication, authorization, audit logging, durable storage, platform rate controls, and an explicit trading-risk workflow.
+SQLite opens read-only and immutable, using indexed target/publication keys. Lightweight standard-library calculations avoid pandas/ML cold-start overhead. Bounded memoization, a shared browser cache and conditional HTTP responses reuse immutable analysis. The UI loads public actuals once and visually conceals them until revealed; this is not access control. API consumers can still explicitly request reveal=false. Fonts are local, and chart data is small. The non-root Docker runtime drops Linux capabilities under Compose. Before extending to private portfolios or execution, add authentication, authorization, audit logging, durable storage, platform rate controls, and an explicit trading-risk workflow.
 
 ## Submission preparation
 

@@ -14,6 +14,8 @@ import {
 import type { Meta } from "../api";
 import { dateLabel, number } from "../format";
 import { Glossary, Icon, KeyFinding } from "./ui";
+import { useMetaQuery } from "../query";
+import { QueryControls } from "./QueryControls";
 
 export default function MethodView({
   meta,
@@ -22,6 +24,7 @@ export default function MethodView({
   meta: Meta | null;
   cutoff: string;
 }) {
+  const metadata = useMetaQuery();
   const [copied, setCopied] = useState(false);
   const [copyError, setCopyError] = useState("");
   const copy = async () => {
@@ -170,6 +173,7 @@ export default function MethodView({
   ];
   return (
     <>
+      <QueryControls query={metadata} />
       <KeyFinding>
         Each delivery timestamp uses the{" "}
         <strong>latest forecast published by the decision cutoff</strong>. Only

@@ -79,7 +79,7 @@ export function MetricCard({
   tone = "neutral",
 }: {
   icon: LucideIcon;
-  label: string;
+  label: ReactNode;
   value: ReactNode;
   unit?: string;
   caption: ReactNode;
@@ -92,7 +92,8 @@ export function MetricCard({
         <h2>
           {label}
           {term &&
-            (label.toLowerCase().includes(term.toLowerCase()) ? (
+            (typeof label === "string" &&
+            label.toLowerCase().includes(term.toLowerCase()) ? (
               <Hint text={definitions[term]} label={`${term}: definition`} />
             ) : (
               <>

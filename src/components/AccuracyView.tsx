@@ -21,9 +21,10 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { Accuracy, DayScore } from "../api";
+import type { DayScore } from "../api";
 import { dateLabel, direction, number, signed } from "../format";
-import { useResource } from "../hooks";
+import { useAccuracyQuery } from "../query";
+import { QueryControls } from "./QueryControls";
 import {
   CoverageLine,
   ExportButton,
@@ -129,11 +130,18 @@ export default function AccuracyView({
   end: string;
   inspect: (day: string) => void;
 }) {
-  const resource = useResource<Accuracy>(
-    `/api/accuracy?start=${start}&end=${end}&cutoff=${cutoff}`,
-  );
+  const resource = useAccuracyQuery(start, end, cutoff);
   const a = resource.data;
-  if (!a) return <Status {...resource} />;
+  if (!a)
+    return (
+      <Status
+        loading={resource.isPending}
+        error={resource.error?.message ?? ""}
+        retry={() => {
+          void resource.refetch();
+        }}
+      />
+    );
   const m = a.metrics;
   // Presentation ranking of existing daily MAE values; no metric is recalculated.
   const worst = [...a.days]
@@ -147,6 +155,7 @@ export default function AccuracyView({
   }));
   return (
     <>
+      <QueryControls query={resource} />
       <KeyFinding>
         {m.count ? (
           <>

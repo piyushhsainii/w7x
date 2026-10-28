@@ -66,6 +66,10 @@ Errors return generic public messages; diagnostic tracebacks stay in server logs
 
 ## Performance choices
 
+One TanStack Query client wraps the application above navigation. Complete decision/range/cutoff keys identify immutable responses; infinite stale time and one-hour garbage collection avoid tab, focus and reconnect refetch. Persistent query observers warm both workspaces once and preserve in-flight requests across navigation; superseded parameter keys cancel via AbortSignal. Inputs, including day arrows, debounce for 300 ms. Previous data remains visible while new filters load. Manual refresh revalidates just the selected workspace and updates its dataUpdatedAt label. The HTTP layer supplies strong content-derived ETags and conditional 304 responses without changing payloads.
+
+The decision query always requests public actuals through the existing reveal=true API representation. A tiny UI-only store and small OutcomeRegion subscribers control visual concealment. This is not authorization: actuals exist in browser memory even when visually hidden. The legacy reveal=false endpoint and CSV behavior remain supported. Memoized chart/audit components retain their DOM, the actual series changes its hide prop, the explicit domain includes both series, animations are disabled, and overlapping visibility layers reserve space. The App root and static table rows do not subscribe to outcome changes. See [the performance evidence](performance-review/REPORT.md) for measured limits and reproduction steps.
+
 The entire fixed-month source snapshot is small, so SQLite indexes and standard-library arithmetic are sufficient. Avoiding pandas and ML libraries reduces runtime dependency size and startup overhead. Separate ingestion from serving, reuse bounded cached analysis, cache immutable successful API responses briefly, and load only the rows necessary for a decision or bounded month summary. The browser receives at most 48 rows per decision and 31 daily scores per summary. Self-hosted fonts avoid a third-party font dependency.
 
 ## Validation and future work

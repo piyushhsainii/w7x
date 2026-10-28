@@ -14,7 +14,7 @@ The pilot is historical: January decision dates are replayed. A production versi
 
 Suppose it is 10 January at 09:30 UK time, and you are considering delivery on 11 January. A forecast published at 07:30 is eligible; one published at 11:30 is too late. For every target timestamp on 11 January, the API selects the most recent forecast with `publishTime <= 10 January 09:30`.
 
-The decision desk displays the selected forecast, its mean and peak MW, its publication time, and coverage. The actual outcome is initially hidden. Selecting “Show actual outcome” adds actual wind and realized error, clearly marking the transition to hindsight.
+The decision desk displays the selected forecast, its mean and peak MW, its publication time, and coverage. The actual outcome is initially visually hidden. Selecting “Show actual outcome” instantly reveals public actual wind and realized error already cached in the browser, clearly marking the transition to hindsight. This concealment is a presentation aid, not access control.
 
 The default cutoff is an example of an internal buying-decision time. It is configurable because the client’s auction and internal deadline need confirmation. Do not claim all UK day-ahead auctions close at 09:30.
 

@@ -1,0 +1,22 @@
+{
+  "start": {
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=false": 27,
+    "/api/meta": 1,
+    "/api/accuracy?start=2026-01-01&end=2026-01-31&cutoff=09:30": 20,
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=true": 6
+  },
+  "newDate": {
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=false": 27,
+    "/api/meta": 1,
+    "/api/accuracy?start=2026-01-01&end=2026-01-31&cutoff=09:30": 20,
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=true": 6,
+    "/api/decision?decision_date=2026-01-16&cutoff=09:30&reveal=false": 1
+  },
+  "returned": {
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=false": 28,
+    "/api/meta": 1,
+    "/api/accuracy?start=2026-01-01&end=2026-01-31&cutoff=09:30": 20,
+    "/api/decision?decision_date=2026-01-15&cutoff=09:30&reveal=true": 6,
+    "/api/decision?decision_date=2026-01-16&cutoff=09:30&reveal=false": 1
+  }
+}
