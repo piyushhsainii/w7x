@@ -639,6 +639,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   height: 360px;
   width: 100%;
 }
+.accuracy-panel,
+.accuracy-chart,
+.accuracy-chart .recharts-responsive-container,
+.accuracy-chart .recharts-wrapper,
+.accuracy-chart .recharts-surface {
+  overflow: visible;
+}
 .chart-caption {
   display: flex;
   justify-content: space-between;

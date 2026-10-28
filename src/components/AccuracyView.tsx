@@ -1,3 +1,4 @@
+import { useSyncExternalStore } from "react";
 import {
   ChevronRight,
   Gauge,
@@ -20,6 +21,7 @@ import {
   Tooltip,
   XAxis,
   YAxis,
+  usePlotArea,
 } from "recharts";
 import type { DayScore } from "../api";
 import { dateLabel, direction, number, signed } from "../format";
@@ -91,29 +93,74 @@ function WorstLabel({ x, y, width, value }: any) {
   );
 }
 
-function PooledLabel({ viewBox, value }: any) {
-  if (!viewBox || typeof viewBox.x !== "number") return <g />;
-  const x = Math.max(viewBox.x, viewBox.x + viewBox.width - 174);
-  const y = viewBox.y - 28;
+const COMPACT_QUERY = "(max-width: 639px)";
+const DESKTOP_ERROR_MARGIN = { top: 42, right: 130, left: 0, bottom: 30 };
+const MOBILE_ERROR_MARGIN = { top: 42, right: 18, left: 0, bottom: 30 };
+function subscribeCompact(listener: () => void) {
+  const media = window.matchMedia?.(COMPACT_QUERY);
+  media?.addEventListener("change", listener);
+  return () => media?.removeEventListener("change", listener);
+}
+const compactSnapshot = () =>
+  window.matchMedia?.(COMPACT_QUERY).matches ?? false;
+
+function PooledLabel({
+  viewBox,
+  value,
+  compact,
+}: {
+  viewBox?: { x?: number; y?: number; width?: number };
+  value: number;
+  compact: boolean;
+}) {
+  const plot = usePlotArea();
+  if (!plot || viewBox?.y == null) return null;
+  const width = 110;
+  const height = 46;
+  const gap = 8;
+  const x = compact ? plot.x + gap : plot.x + plot.width + gap;
+  // Keep the pill within the chart at either axis extreme. The existing 42px
+  // top margin also leaves room for the compact pill above a near-top line.
+  const preferredTop = compact
+    ? viewBox.y - gap - height
+    : viewBox.y - height / 2;
+  const minTop = compact ? 4 : plot.y;
+  const y = Math.max(
+    minTop,
+    Math.min(preferredTop, plot.y + plot.height - height),
+  );
   return (
-    <g>
+    <g
+      className="pooled-mae-label"
+      role="group"
+      aria-label={`Pooled MAE: ${number(value)} megawatts`}
+      pointerEvents="none"
+    >
       <rect
         x={x}
         y={y}
-        width={174}
-        height={24}
-        rx={4}
+        width={width}
+        height={height}
+        rx={6}
         fill="var(--color-surface)"
         stroke="var(--color-primary)"
+        strokeWidth={1}
       />
       <text
         x={x + 8}
-        y={y + 16}
+        y={y + height / 2}
+        textAnchor="start"
+        dominantBaseline="middle"
         fill="var(--color-primary)"
         fontSize={12}
         fontWeight={600}
       >
-        {value}
+        <tspan x={x + 8} dy={-8}>
+          Pooled MAE
+        </tspan>
+        <tspan x={x + 8} dy={16}>
+          {number(value)} MW
+        </tspan>
       </text>
     </g>
   );
@@ -130,6 +177,11 @@ export default function AccuracyView({
   end: string;
   inspect: (day: string) => void;
 }) {
+  const compact = useSyncExternalStore(
+    subscribeCompact,
+    compactSnapshot,
+    () => false,
+  );
   const resource = useAccuracyQuery(start, end, cutoff);
   const a = resource.data;
   if (!a)
@@ -266,7 +318,8 @@ export default function AccuracyView({
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={chartDays}
-              margin={{ top: 42, right: 18, left: 0, bottom: 30 }}
+              margin={compact ? MOBILE_ERROR_MARGIN : DESKTOP_ERROR_MARGIN}
+              style={{ overflow: "visible" }}
               accessibilityLayer
               onClick={(state: any) => {
                 const row = chartDays.find(
@@ -306,22 +359,6 @@ export default function AccuracyView({
                 content={<ScoreTooltip />}
                 cursor={{ fill: "var(--color-primary-surface)" }}
               />
-              {m.mae_mw != null && (
-                <ReferenceLine
-                  y={m.mae_mw}
-                  stroke="var(--color-primary)"
-                  strokeWidth={2}
-                  strokeDasharray="6 4"
-                >
-                  <Label
-                    content={
-                      <PooledLabel
-                        value={`Pooled MAE ${number(m.mae_mw)} MW`}
-                      />
-                    }
-                  />
-                </ReferenceLine>
-              )}
               <Bar
                 dataKey="mae_mw"
                 name="Daily MAE"
@@ -341,6 +378,20 @@ export default function AccuracyView({
                 ))}
                 <LabelList dataKey="worst" content={<WorstLabel />} />
               </Bar>
+              {m.mae_mw != null && (
+                <ReferenceLine
+                  y={m.mae_mw}
+                  stroke="var(--color-primary)"
+                  strokeWidth={2}
+                  strokeDasharray="6 4"
+                  role="img"
+                  aria-label={`Pooled MAE across January: ${number(m.mae_mw)} megawatts`}
+                >
+                  <Label
+                    content={<PooledLabel value={m.mae_mw} compact={compact} />}
+                  />
+                </ReferenceLine>
+              )}
             </BarChart>
           </ResponsiveContainer>
         </div>
