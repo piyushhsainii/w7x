@@ -65,3 +65,11 @@ python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
 Open the app, perform the steps, then expand “Local performance audit” at the bottom to read the captured JSON. **Do not deploy the audit dist.** `npm run build` cleans it and returns to the ordinary runtime. Production contains no audit overlay or fetch wrapper.
 
 The local Docker daemon was unavailable during this revision. The repository's clean Ubuntu CI runs a Docker build; its result is recorded in the publication verification entry below.
+
+## Publication verification
+
+- Application commit: `433aaef7b3f6684500f7f347bbe2dff8c3018731`.
+- [GitHub Checks run 40664579214](https://github.com/piyushhsainii/w7x/actions/runs/40664579214) **passed**, including Python tests, frontend tests, production build and Docker build on clean Ubuntu.
+- [Public production app](https://q7m2vx-two.vercel.app) is Ready on Vercel deployment `dpl_BpLbKY2xQKQskC7iwbvU6ptKb7mi`. Anonymous root, health, metadata, decision and accuracy requests returned 200; all four API representations returned an empty 304 with their matching ETag. The deployed monthly metrics remain 744 observations, MAE 1995.569 MW, RMSE 2498.825 MW and bias 1727.983 MW.
+- `live-http.json` records these checks. The Python origin returns the full stale-while-revalidate policy; Vercel's public response retains max-age=300 and strips the CDN directive before forwarding it to the browser, as documented in [Vercel's CDN cache policy](https://vercel.com/docs/caching/cdn-cache). Strong ETags and conditional validation remain intact.
+- The public UI was opened, actuals revealed, and its updated timestamp/refresh affordance and chart inspected. No browser console errors were captured. `live-desktop.jpg` shows the deployed result. The QA overlay and profiler bundle are absent from normal production assets.

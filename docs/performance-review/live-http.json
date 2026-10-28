@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 682,
+    "etag": "\"0b7207030e2afee3b048c9303e8c1941\"",
+    "cache_control": "public, max-age=0, must-revalidate"
+  },
+  {
+    "path": "/api/health",
+    "status": 200,
+    "bytes": 145,
+    "etag": "\"5d5f97ce97e1767d54c3cb502ec9c8a9bc684682a4ecdb124bd1a1a0819424de\"",
+    "cache_control": "public, max-age=300",
+    "conditional_status": 304
+  },
+  {
+    "path": "/api/meta",
+    "status": 200,
+    "bytes": 832,
+    "etag": "\"2a02f1d9cffa3954aa3c64b5e0e73fbbdfa81a8d270a6ad5e79ea1a9b53095f6\"",
+    "cache_control": "public, max-age=300",
+    "conditional_status": 304
+  },
+  {
+    "path": "/api/decision?reveal=true",
+    "status": 200,
+    "bytes": 12093,
+    "etag": "\"b9c77e245eeb983f9b2a1e7d9ed81ce8ce9291e5fd96cdb05c29c72d07e28209\"",
+    "cache_control": "public, max-age=300",
+    "conditional_status": 304
+  },
+  {
+    "path": "/api/accuracy",
+    "status": 200,
+    "bytes": 8756,
+    "etag": "\"ae52392c3e85c04b86b69250a3a3f0ca2d5a7ad846b48c95513c4337b8aacde0\"",
+    "cache_control": "public, max-age=300",
+    "conditional_status": 304,
+    "metrics": {
+      "count": 744,
+      "mae_mw": 1995.569,
+      "rmse_mw": 2498.825,
+      "bias_mw": 1727.983,
+      "wape_pct": 17.683,
+      "p90_absolute_error_mw": 4183.9,
+      "overforecast_pct": 84.274,
+      "mean_overforecast_mw": 2209.188
+    }
+  }
+]
